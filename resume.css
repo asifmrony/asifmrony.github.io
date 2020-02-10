@@ -204,6 +204,7 @@ li:before {
 }
 
 #header {
+    display: flex;
     height: 130px;
     border-bottom: 1px solid #403F44;
 }
@@ -219,6 +220,8 @@ li:before {
     height: 130px;
     width: 699px;
     float: left;
+    display: flex;
+    align-items: center;
 }
 
 .header_menu_container a {
@@ -327,7 +330,7 @@ li:before {
 }
 
 .profile_frame {
-    width: 180px;
+    width: 205px;
     height: 220px;
     background: black;
     border: 1px solid #403F44;

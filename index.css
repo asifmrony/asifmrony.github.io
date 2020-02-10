@@ -14,12 +14,12 @@
 }
 
 .home-main-section .my-image {
-    background-image: url(images/rony.png);
+    background-image: url(images/myphoto_bgremoved.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
-    max-height: 70vh;
-    min-width: 30vh;
+    max-height: 100vh;
+    min-width: 50vh;
     flex-grow: 1;
 }
 

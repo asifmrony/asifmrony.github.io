@@ -15,11 +15,11 @@
 
 .home-main-section .my-image {
     background-image: url(images/myphoto_bgremoved.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;
     max-height: 100vh;
-    min-width: 50vh;
+    min-width: 56vh;
     flex-grow: 1;
 }
 

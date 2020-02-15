@@ -32,8 +32,8 @@
         </div>
     </div> -->
     <nav class="navbar">
-        <span>
-            <a href="#">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
                 <svg width="30" height="30">
                     <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
                     <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
@@ -42,15 +42,18 @@
             </a>
         </span>
 
-        <ul class="navbar-nav">
+        <!-- <ul class="navbar-nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Resume</a></li>
             <li><a href="#">Contact</a></li>
-        </ul>
+        </ul> -->
+        <span>
+            <a href="#" class="btn" id="btn-orange">Download CV</a>
+        </span>
     </nav>
 
     <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close">&times;</a>
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
         <a href="#">Home</a>
         <a href="#">Resume</a>
         <a href="#">Contact</a>
@@ -59,7 +62,7 @@
 
     <!--Main Content section starts-->
     <section class="home-main-section">
-        <div class="call-to-action">
+        <div class="call-to-action" id="main">
             <span class="welcome-text">Hello there...</span>
             <h1 class="title">Asif Mahmud Rony</h1>
             <span class="subtitle">I am passionate Designer, Developer and Digital Marketer</span>
@@ -78,6 +81,18 @@
     <div class="home-page-circle-1"></div>
     <div class="home-page-circle-2"></div>
     <div class="home-page-circle-3"></div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById("side-menu").style.width = '250px';
+            document.getElementById("main").style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById("side-menu").style.width = '0';
+            document.getElementById("main").style.marginLeft = '0';
+        }
+    </script>
 </body>
 
 </html>

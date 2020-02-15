@@ -75,17 +75,35 @@ First version of navbar style end
 --------------------------------------------*/
 
 .navbar {
-    background-color: #1762a7;
-    height: 63px;
+    /* background-color: #1762a7; */
+    height: 3.9375rem;
     overflow: hidden;
+    margin-top: 1rem;
 }
 
+.navbar .menu-btn {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    background-color: #1762a7;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+.navbar .menu-btn:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/*
 .navbar ul {
     list-style-type: none;
     margin: 8px 0 0 0;
 }
 
-.navbar a {
+.navbar ul a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -95,10 +113,11 @@ First version of navbar style end
     font-size: 1.1rem
 }
 
-.navbar a:hover {
+.navbar ul a:hover {
     background-color: #ddd;
     color: #000;
 }
+*/
 
 .side-nav {
     height: 100%;
@@ -108,14 +127,14 @@ First version of navbar style end
     left: 0;
     background-color: #111;
     opacity: 0.9;
-    padding-top: 60px;
+    padding-top: 3.75rem;
     z-index: 1;
     overflow-x: hidden;
     transition: 0.5s;
 }
 
 .side-nav a {
-    padding: 10px 10px 10px 30px;
+    padding: 0.625rem 0.625rem 0.625rem 1.875rem;
     display: block;
     color: #ccc;
     font-size: 1.5rem;
@@ -131,13 +150,19 @@ First version of navbar style end
 .side-nav .btn-close {
     position: absolute;
     top: 0px;
-    right: 22px;
-    font-size: 30px;
-    margin-left: 50px;
+    right: 1.375rem;
+    font-size: 1.875rem;
+    margin-left: 3.125rem;
 }
 
 #btn-orange {
-    background-color: orange;
+    background-color: #A67017;
+    float: right;
+    margin: .5rem 3rem 0 0;
+}
+
+#btn-orange:hover {
+    background-color: rgb(196, 140, 52);
 }
 
 #main {

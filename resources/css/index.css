@@ -14,7 +14,7 @@
 }
 
 .home-main-section .my-image {
-    background-image: url(images/myphoto_bgremoved.png);
+    background-image: url(../images/myphoto_bgremoved.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom left;

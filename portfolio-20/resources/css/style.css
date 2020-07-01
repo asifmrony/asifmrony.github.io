@@ -1,0 +1,11 @@
+/*import fonts from font.css*/
+
+@import url('./font.css');
+
+body {
+    font-family: 'Segoe UI Regular', sans-serif;
+    /* font-family: 'Segoe UI Italic';
+    font-family: 'Segoe UI Bold'; 
+    font-family: 'Segoe UI Bold Italic'; */
+    font-weight: normal;
+}

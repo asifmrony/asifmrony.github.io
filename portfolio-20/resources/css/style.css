@@ -10,6 +10,8 @@ body {
     font-weight: normal;
 }
 
+/*====================== Home Main Section Styling start====================*/
+
 .home-main-section {
     /* background: green; */
     width: 100%;
@@ -34,7 +36,7 @@ body {
 }
 
 .home-main-section .title {
-    font-family: calibri;
+    /* font-family: myriad pro regular; */
     font-weight: bold;
     color: #1a1a1a;
     font-size: 3.75rem;
@@ -65,7 +67,7 @@ body {
     padding-top: 8px;
     border-radius: 10px;
     outline: none;
-    font-family: calibri;
+    /* font-family: calibri; */
     font-size: 14px;
     font-weight: bold;
     margin: 0px 10px 0px 0px;
@@ -122,7 +124,7 @@ body {
     max-height: 100%;
     position: absolute;
 
-    bottom: 0;
+    bottom: 80px;
     right: 0;
     transform: translateX(-5%);
 }
@@ -139,4 +141,61 @@ body {
         right: -20%;
         transform: translateX(0%);
     }
+}
+
+/*====================== Home Main Section Styling End====================*/
+
+/*====================== About Me Section Styling start====================*/
+
+.about-me {
+    width: 80%;
+    margin: -7% auto 20px auto;
+    height: 330px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-me .about-text {
+    width: 550px;
+}
+
+.about-text p:nth-child(1) {
+    color: #403e3e;
+    font-family: myriad pro regular;
+    font-size: 23px;
+    font-weight: bold;
+    /* line-height: 0px; */
+}
+
+.about-text p:nth-child(2) {
+    color: #3e3d3d;
+    font-family: myriad pro regular;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+.about-text p:nth-child(3),
+.about-text p:nth-child(4) {
+    color: #7e7d7d;
+    /* font-family: calibri; */
+    font-size: 16px;
+}
+
+.about-text button {
+    width: 120px;
+    height: 40px;
+    background-color: #262525;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.about-text button:hover {
+    transform: scale(1.1);
 }

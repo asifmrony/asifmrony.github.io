@@ -11,19 +11,132 @@ body {
 }
 
 .home-main-section {
-    background: green;
+    /* background: green; */
     width: 100%;
     height: 100vh;
-    display: flex;
+    /* display: flex; */
 
     position: relative;
 }
 
-.img-wrapper img {
+.home-main-section .call-to-action {
+    position: absolute;
+    top: 42%;
+    left: 13%;
+    transform: translate(-13%, -42%);
+}
+
+.welcome-text {
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+}
+
+.home-main-section .title {
+    font-family: calibri;
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* margin-bottom: 1rem;
+    margin-top: 0; */
+}
+
+.home-main-section .subtitle {
+    font-family: myriad pro regular;
+    color: #403e3e;
+    /* font-weight: 500; */
+    font-size: 30px;
+    line-height: 30px;
+    /* margin-bottom: 2rem; */
+}
+
+.home-main-section p {
+    line-height: 10px;
+    margin: 45px 0px 25px;
+}
+
+.home-main-section .btn {
+    width: 130px;
+    height: 42px;
+    padding-top: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-family: calibri;
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px 0px 0px;
+}
+
+.my-work-btn {
+    border: 2px solid #373636;
+    color: #373636;
+}
+
+.my-work-btn:hover {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+}
+
+.hire-me-btn {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+}
+
+.hire-me-btn:hover {
+    border: 2px solid #373636;
+    color: #373636;
+    background-color: #fff;
+}
+
+.btn:active {
+    transform: scale(1, 1);
+}
+
+@media only screen and (max-width:1035px) {
+    .home-main-section .title {
+        line-height: 60px;
+    }
+
+    .home-main-section .subtitle {
+        line-height: 40px;
+    }
+
+    .home-main-section .call-to-action {
+        background: rgba(255, 255, 255, 0.7);
+        /* background: rgba(255, 255, 0, 0.7); */
+        z-index: 1;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.home-main-section .img-wrapper img {
     max-height: 100%;
     position: absolute;
 
     bottom: 0;
     right: 0;
     transform: translateX(-5%);
+}
+
+@media only screen and (max-width:992px) {
+    .home-main-section .img-wrapper img {
+        right: -5%;
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width:435px) {
+    .home-main-section .img-wrapper img {
+        right: -20%;
+        transform: translateX(0%);
+    }
 }

@@ -156,9 +156,11 @@ body {
 
 /*====================== About Me Section Styling start====================*/
 
+.about-container {
+    background-color: orange;
+}
+
 .about-me {
-    width: 80%;
-    margin: -7% auto 20px auto;
     height: 350px;
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -168,6 +170,12 @@ body {
     justify-content: space-evenly;
     align-items: center;
     z-index: 1;
+
+    /* margin: -7% auto 20px auto; */
+    width: 86%;
+    margin: 0 auto;
+    bottom: 10vh;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .about-me .about-text {
@@ -274,3 +282,61 @@ body {
 }
 
 /*====================== About Me Section Styling End====================*/
+
+.featured-projects-container {}
+
+.featured-projects {
+    width: 86%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.featured-projects .heading-texts h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.featured-projects .heading-texts p {
+    width: 70px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.featured-projects .button-group {
+    /* padding: 2rem 0; */
+}
+
+.featured-projects .button-group button {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 7rem;
+}
+
+button:active,
+button:focus,
+button:hover,
+.btn:active,
+.btn.active {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.featured-projects .button-group button+button {
+    margin-left: 1rem;
+}
+
+.featured-projects .grid .img-wrapper img {
+    width: 100%;
+}
+
+.featured-projects .grid .description {
+    padding: 1.5rem 0 0 0;
+}
+
+.featured-projects .grid .description h4 {
+    font: normal 700 25px/12px 'Roboto';
+}

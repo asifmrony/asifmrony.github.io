@@ -10,7 +10,9 @@ body {
     font-weight: normal;
 }
 
-/*====================== Home Main Section Styling start====================*/
+/*================================
+ Home Main Section Styling start
+ =================================*/
 
 .home-main-section {
     /* background: green; */
@@ -152,9 +154,13 @@ body {
     }
 }
 
-/*====================== Home Main Section Styling End====================*/
+/*=================================
+ Home Main Section Styling End
+ ==================================*/
 
-/*====================== About Me Section Styling start====================*/
+/*==============================
+ About Me Section Styling start
+ ===============================*/
 
 .about-container {
     background-color: orange;
@@ -281,7 +287,13 @@ body {
     }
 }
 
-/*====================== About Me Section Styling End====================*/
+/*==============================
+ About Me Section Styling End
+ ===============================*/
+
+/*====================================
+ Featured Project Section Styling Start
+ ======================================*/
 
 .featured-projects-container {}
 
@@ -316,6 +328,13 @@ body {
     line-height: 7rem;
 }
 
+.featured-projects .button-group button.active,
+.active {
+    color: crimson;
+    font-size: 20px;
+}
+
+
 button:active,
 button:focus,
 button:hover,
@@ -339,4 +358,89 @@ button:hover,
 
 .featured-projects .grid .description h4 {
     font: normal 700 25px/12px 'Roboto';
+}
+
+/*====================================
+ Contact me Section Styling Start
+ ======================================*/
+.contact-me-wrapper {
+    padding: 6rem 0;
+    background-color: rgb(7, 12, 36);
+    color: #fff;
+    text-align: center;
+}
+
+.contact-me {}
+
+.contact-me h4 {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.contact-me .btn {
+    width: 130px;
+    height: 42px;
+    padding-top: 8px;
+    border-radius: 10px;
+    outline: none;
+    /* font-family: calibri; */
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+}
+
+/*====================================
+ Footer Section Styling Start
+ ======================================*/
+
+.footer-wrapper {
+    padding: 5rem 0 2rem;
+}
+
+.footer-wrapper .footer-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-wrapper .footer-content .footer-logo {
+    margin-bottom: 50px;
+}
+
+.footer-wrapper .footer-logo a {
+    display: inline-block;
+    border: 4px solid rgb(7, 12, 36);
+    text-decoration: none;
+    width: 80px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-wrapper .footer-content p {
+    color: #555;
+}
+
+.footer-wrapper .footer-content .footer-social-links {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-wrapper .footer-content .footer-social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #000;
+    background-color: #999;
+    position: relative;
+    margin-right: 15px;
+}
+
+.footer-wrapper .footer-content .footer-social-links a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

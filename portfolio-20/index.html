@@ -8,6 +8,8 @@
     <title>You are visiting Rony's Protfolio</title>
     <link rel="stylesheet" href="./resources/css/all.css">
     <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/vendor/Magnific-Popup/magnific-popup.css">
+    <!-- Custom css file-->
     <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 
@@ -61,23 +63,25 @@
                 <p></p>
             </div>
             <div class="button-group">
-                <button type="button" class="active">All</button>
+                <button type="button" class="active" id="btn-all" data-filter="*">All</button>
                 <button type="button" data-filter=".latest">Latest</button>
                 <button type="button" data-filter=".ui-design">UI Design</button>
                 <button type="button" data-filter=".web-design">Web Design</button>
                 <button type="button" data-filter=".development">Development</button>
             </div>
             <div class="row grid">
-                <div class="col-12 col-sm-6 col-lg-4 latest">
+                <div class="col-12 col-sm-6 col-lg-4 element-item latest">
                     <div class="img-wrapper">
-                        <img src="./resources/images/portfolio/p1.jpg" alt="">
+                        <a class="mp-container" href="./resources/images/portfolio/p1.jpg">
+                            <img src="./resources/images/portfolio/p1.jpg" alt="">
+                        </a>
                     </div>
                     <div class="description">
                         <h4>Minimal Design</h4>
                         <p>Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 ui-design">
+                <div class="col-12 col-sm-6 col-lg-4 element-item ui-design">
                     <div class="img-wrapper">
                         <img src="./resources/images/portfolio/p2.jpg" alt="">
                     </div>
@@ -86,7 +90,7 @@
                         <p>Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 latest">
+                <div class="col-12 col-sm-6 col-lg-4 element-item latest">
                     <div class="img-wrapper">
                         <img src="./resources/images/portfolio/p3.jpg" alt="">
                     </div>
@@ -95,7 +99,7 @@
                         <p>Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 ui-design">
+                <div class="col-12 col-sm-6 col-lg-4 element-item ui-design">
                     <div class="img-wrapper">
                         <img src="./resources/images/portfolio/p4.jpg" alt="">
                     </div>
@@ -104,7 +108,7 @@
                         <p>Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 web-design">
+                <div class="col-12 col-sm-6 col-lg-4 element-item web-design">
                     <div class="img-wrapper">
                         <img src="./resources/images/portfolio/p5.jpg" alt="">
                     </div>
@@ -113,7 +117,7 @@
                         <p>Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4 development">
+                <div class="col-12 col-sm-6 col-lg-4 element-item development">
                     <div class="img-wrapper">
                         <img src="./resources/images/portfolio/p6.jpg" alt="">
                     </div>
@@ -130,14 +134,14 @@
     <section class="contact-me-wrapper">
         <div class="contact-me">
             <h4>If You Have Any Project In Your Mind.</h4>
-            <a href="contact.html" btn btn-white>Contact Me</a>
+            <a href="contact.html" class="btn btn-white">Contact Me</a>
         </div>
     </section>
 
     <section class="footer-wrapper">
         <div class="footer-content">
             <div class="footer-logo">
-                <a href="#">AMR</a>
+                <a href="#">AMR.</a>
             </div>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Odio earum, rem consequatur iste fugit
@@ -155,17 +159,10 @@
 
     <script src="./resources/js/jquery-3.4.1.min.js"></script>
     <script src="./resources/js/bootstrap.min.js"></script>
-    <script>
-        function openSlideMenu() {
-            document.getElementById("side-menu").style.width = '250px';
-            document.getElementById("main").style.marginLeft = '250px';
-        }
-
-        function closeSlideMenu() {
-            document.getElementById("side-menu").style.width = '0';
-            document.getElementById("main").style.marginLeft = '0';
-        }
-    </script>
+    <script src="./resources/vendor/isotope/isotope.min.js"></script>
+    <script src="./resources/vendor/Magnific-Popup/magnific-popup.min.js"></script>
+    <!--Main JS file-->
+    <script src="./resources/js/main.js"></script>
 </body>
 
 </html>

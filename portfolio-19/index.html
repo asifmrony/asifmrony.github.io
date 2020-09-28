@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
+    <link rel="stylesheet" href="./resources/css/index.css" type="text/css">
+    <title>Welcome Dear!</title>
+</head>
+
+
+<body class="full-height-grow container">
+    <!--Nav markup starts-->
+    <!-- <div class="navbar-wrapper">
+        <div class="left-side">
+            <div class="nav-link-wrapper active-nav-link">
+                <a href="index.html">Home</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="resume.html">Resume/CV</a>
+            </div>
+            <div class="nav-link-wrapper">
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="brand">
+                Asif Mahmud Rony
+            </div>
+        </div>
+    </div> -->
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" class="menu-btn" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+
+        <!-- <ul class="navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul> -->
+        <span>
+            <a href="./Asif's_Resume.pdf" download class="btn" id="btn-orange">Download CV</a>
+        </span>
+    </nav>
+
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="./index.html">Home</a>
+        <a href="./resume.html">Resume</a>
+        <a href="./contact.html">Contact</a>
+    </div>
+    <!--Nav markup end-->
+
+    <!--Main Content section starts-->
+    <section class="home-main-section">
+        <div class="call-to-action" id="main">
+            <span class="welcome-text">Hello there...</span>
+            <h1 class="title">Asif Mahmud Rony</h1>
+            <span class="subtitle">I am passionate Designer, Developer and Digital Marketer</span>
+            <span class="regular-text">Self Taught Web developer who is currently providing services
+                like UI/UX design, Website Development and Digital Marketing</span>
+            <div class="links">
+                <a href='join.html' class="btn">My work</a>
+                <a href='join.html' class="btn">Hire Me</a>
+            </div>
+        </div>
+        <div class="img-wrapper">
+            <div class="my-image"></div>
+        </div>
+    </section>
+
+    <div class="home-page-circle-1"></div>
+    <div class="home-page-circle-2"></div>
+    <div class="home-page-circle-3"></div>
+
+    <script>
+        function openSlideMenu() {
+            document.getElementById("side-menu").style.width = '250px';
+            document.getElementById("main").style.marginLeft = '250px';
+        }
+
+        function closeSlideMenu() {
+            document.getElementById("side-menu").style.width = '0';
+            document.getElementById("main").style.marginLeft = '0';
+        }
+    </script>
+</body>
+
+</html>

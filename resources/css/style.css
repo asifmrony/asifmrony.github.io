@@ -1,204 +1,446 @@
-/*###########################
-Global styling sheet for every page
-############################*/
+/*import fonts from font.css*/
+
+@import url('./font.css');
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1.2rem;
-    min-height: 100vh;
+    font-family: 'Segoe UI Regular', sans-serif;
+    /* font-family: 'Segoe UI Italic';
+    font-family: 'Segoe UI Bold'; 
+    font-family: 'Segoe UI Bold Italic'; */
+    font-weight: normal;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 40px;
+/*================================
+ Home Main Section Styling start
+ =================================*/
+
+.home-main-section {
+    /* background: green; */
+    width: 100%;
+    height: 100vh;
+    /* display: flex; */
+
+    position: relative;
 }
 
-.full-height-grow {
-    display: flex;
-    flex-direction: column;
+.home-main-section p {
+    line-height: 10px;
+    margin: 45px 0px 25px;
 }
 
-
-/*===========================
-Navigation Bar styles start
-=============================*/
-
-/*-------------------------------------------
-Below style is for first version of navbar
----------------------------------------------*/
-/* .navbar-wrapper {
-    display: flex;
-    justify-content: space-between;
-    padding: 38px;
-}
-
-.left-side {
-    display: flex;
-}
-
-// This one for general styling of nav-link-wrapper div
-.navbar-wrapper>.left-side>div {
-    margin-right: 20px;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-// transition/animation styling of nav-link-wrapper div
-.nav-link-wrapper {
-    height: 22px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.5s;
-}
-
-.nav-link-wrapper>a {
-    color: #8a8a8a;
-    text-decoration: none;
-    transition: color 0.5s;
-}
-
-.active-nav-link a {
-    color: #000;
-}
-
-.nav-link-wrapper:hover {
-    border-bottom: 2px solid #000;
-}
-
-.nav-link-wrapper>a:hover {
-    color: #000;
-} */
-/*------------------------------------------
-First version of navbar style end
---------------------------------------------*/
-
-.navbar {
-    /* background-color: #1762a7; */
-    height: 3.9375rem;
-    overflow: hidden;
-    margin-top: 1rem;
-}
-
-.navbar .menu-btn {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    background-color: #1762a7;
-    text-decoration: none;
-    padding: .5rem 1rem;
-    text-align: center;
-    font-size: 1.1rem;
-}
-
-.navbar .menu-btn:hover {
-    background-color: #ddd;
-    color: #000;
-}
-
-/*
-.navbar ul {
-    list-style-type: none;
-    margin: 8px 0 0 0;
-}
-
-.navbar ul a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-decoration: none;
-    padding: 14px 16px;
-    text-align: center;
-    font-size: 1.1rem
-}
-
-.navbar ul a:hover {
-    background-color: #ddd;
-    color: #000;
-}
-*/
-
-.side-nav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    opacity: 0.9;
-    padding-top: 3.75rem;
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.side-nav a {
-    padding: 0.625rem 0.625rem 0.625rem 1.875rem;
-    display: block;
-    color: #ccc;
-    font-size: 1.5rem;
-    text-decoration: none;
-    /* text-align: center; */
-    transition: 0.3s;
-}
-
-.side-nav a:hover {
-    color: #fff;
-}
-
-.side-nav .btn-close {
+.home-main-section .call-to-action {
     position: absolute;
-    top: 0px;
-    right: 1.375rem;
-    font-size: 1.875rem;
-    margin-left: 3.125rem;
+    top: 42%;
+    left: 13%;
+    transform: translate(-13%, -42%);
 }
 
-#btn-orange {
-    background-color: #A67017;
-    float: right;
-    margin: .5rem 3rem 0 0;
+.home-main-section .welcome-text {
+    font-family: calibri;
+    font-weight: bold;
+    color: #6d6d6d;
+    font-size: 22px;
+    margin-bottom: 20px;
 }
 
-#btn-orange:hover {
-    background-color: rgb(196, 140, 52);
+.home-main-section .title {
+    /* font-family: myriad pro regular; */
+    font-weight: bold;
+    color: #1a1a1a;
+    font-size: 3.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    /* margin-bottom: 1rem;
+    margin-top: 0; */
 }
 
-#main {
-    transition: margin-left 0.5s;
-    /* padding: 20px; */
-    overflow: hidden;
+.home-main-section .title .name {
+    letter-spacing: -1px;
+    font-size: 56px;
+
+}
+
+.home-main-section .subtitle {
+    font-family: myriad pro regular;
+    color: #403e3e;
+    /* font-weight: 500; */
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 1.7rem;
+    margin-top: 18px;
+}
+
+.home-main-section .btn {
+    width: 130px;
+    height: 42px;
+    padding-top: 8px;
+    border-radius: 10px;
+    outline: none;
+    /* font-family: calibri; */
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 10px 0px 0px;
+}
+
+.my-work-btn {
+    border: 2px solid #373636;
+    color: #373636;
+}
+
+.my-work-btn:hover {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+}
+
+.hire-me-btn {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: none;
+}
+
+.hire-me-btn:hover {
+    border: 2px solid #373636;
+    color: #373636;
+    background-color: #fff;
+}
+
+.btn:active {
+    transform: scale(1, 1);
+}
+
+@media only screen and (max-width:1035px) {
+    .home-main-section .title {
+        line-height: 60px;
+    }
+
+    .home-main-section .subtitle {
+        line-height: 40px;
+    }
+
+    .home-main-section .call-to-action {
+        background: rgba(255, 255, 255, 0.7);
+        /* background: rgba(255, 255, 0, 0.7); */
+        z-index: 1;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.home-main-section .img-wrapper img {
+    max-height: 100%;
+    position: absolute;
+
+    bottom: 80px;
+    right: 0;
+    transform: translateX(-5%);
+}
+
+@media only screen and (max-width:992px) {
+    .home-main-section .img-wrapper img {
+        bottom: 0;
+        /* right: -5%; */
+        transform: translateX(0%);
+    }
+}
+
+@media only screen and (max-width:435px) {
+    .home-main-section .img-wrapper img {
+        /* right: -20%; */
+        transform: translateX(0%);
+    }
+}
+
+/*=================================
+ Home Main Section Styling End
+ ==================================*/
+
+/*==============================
+ About Me Section Styling start
+ ===============================*/
+
+.about-container {
+    background-color: orange;
+}
+
+.about-me {
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+
+    /* margin: -7% auto 20px auto; */
+    width: 86%;
+    margin: 0 auto;
+    bottom: 10vh;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.about-me .about-text {
+    width: 550px;
+}
+
+.about-text p:nth-child(1) {
+    color: #403e3e;
+    font-family: myriad pro regular;
+    font-size: 23px;
+    font-weight: bold;
+    /* line-height: 0px; */
+}
+
+.about-text p:nth-child(2) {
+    color: #3e3d3d;
+    font-family: myriad pro regular;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 5px;
+}
+
+.about-text p:nth-child(3),
+.about-text p:nth-child(4) {
+    color: #7e7d7d;
+    /* font-family: calibri; */
+    font-size: 16px;
+}
+
+.about-text button {
+    width: 120px;
+    height: 40px;
+    background-color: #262525;
+    color: #fff;
+    outline: none;
+    border: none;
+}
+
+.about-text button:hover {
+    transform: scale(1.1);
+}
+
+@media only screen and (max-width:1035px) {
+    .about-me {
+        min-height: 500px;
+    }
+
+    .about-me .about-text {
+        width: 50%;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .about-me {
+        min-height: 710px;
+        margin-top: 0px;
+        display: block;
+        padding-top: 50px;
+    }
+
+    .about-me img {
+        display: block;
+        max-width: 290px;
+        margin: 0 auto;
+    }
+
+    .about-me .about-text {
+        /* display: block; */
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .about-me .about-text p:nth-child(2) {
+        margin-bottom: 20px;
+    }
+
+    .about-me .about-button-container {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .about-me {
+        height: 800px;
+
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .about-me {
+        height: 800px;
+    }
+
+    .about-me img {
+        height: 160px;
+        width: 200px;
+    }
+
+    .about-me button:nth-child(1) {
+        margin-bottom: 10px;
+    }
+}
+
+/*==============================
+ About Me Section Styling End
+ ===============================*/
+
+/*====================================
+ Featured Project Section Styling Start
+ ======================================*/
+
+.featured-projects-container {}
+
+.featured-projects {
+    width: 86%;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.featured-projects .heading-texts h2 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.featured-projects .heading-texts p {
+    width: 70px;
+    height: 5px;
+    background-color: red;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.featured-projects .button-group {
+    /* padding: 2rem 0; */
+}
+
+.featured-projects .button-group button {
+    border: none;
+    background: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 7rem;
+}
+
+.featured-projects .button-group button.active,
+.active {
+    color: crimson;
+    font-size: 20px;
+}
+
+
+button:active,
+button:focus,
+button:hover,
+.btn:active,
+.btn.active {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.featured-projects .button-group button+button {
+    margin-left: 1rem;
+}
+
+.featured-projects .grid .img-wrapper img {
     width: 100%;
 }
 
-/*=============================
-Navigation Bar style End
-===============================*/
-
-/*===========================
-Main content style Start
-=============================*/
-.title {
-    font-weight: 500;
-    font-size: 3em;
-    margin-bottom: 1rem;
-    margin-top: 0;
+.featured-projects .grid .description {
+    padding: 1.5rem 0 0 0;
 }
 
-.subtitle {
-    font-weight: 500;
-    font-size: 1.2em;
-    margin-bottom: 2rem;
+.featured-projects .grid .description h4 {
+    font: normal 700 25px/12px 'Roboto';
 }
 
-.btn {
+/*====================================
+ Contact me Section Styling Start
+ ======================================*/
+.contact-me-wrapper {
+    padding: 6rem 0;
+    background-color: rgb(7, 12, 36);
     color: #fff;
-    background-color: #1762A7;
-    padding: .75rem 1.5rem;
+    text-align: center;
+}
+
+.contact-me {}
+
+.contact-me h4 {
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.contact-me .btn {
+    width: 130px;
+    height: 42px;
+    padding-top: 8px;
+    border-radius: 10px;
+    outline: none;
+    /* font-family: calibri; */
+    font-size: 14px;
+    font-weight: bold;
+    background: #fff;
+}
+
+/*====================================
+ Footer Section Styling Start
+ ======================================*/
+
+.footer-wrapper {
+    padding: 5rem 0 2rem;
+}
+
+.footer-wrapper .footer-content {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-wrapper .footer-content .footer-logo {
+    margin-bottom: 50px;
+}
+
+.footer-wrapper .footer-logo a {
+    display: inline-block;
+    border: 4px solid rgb(7, 12, 36);
     text-decoration: none;
-    border-radius: .5rem;
-    font-size: .9rem;
-    margin-right: 1rem;
-    text-transform: uppercase;
+    width: 80px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.footer-wrapper .footer-content p {
+    color: #555;
+}
+
+.footer-wrapper .footer-content .footer-social-links {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.footer-wrapper .footer-content .footer-social-links a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #000;
+    background-color: #999;
+    position: relative;
+    margin-right: 15px;
+}
+
+.footer-wrapper .footer-content .footer-social-links a i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

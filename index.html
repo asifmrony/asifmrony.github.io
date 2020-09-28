@@ -5,94 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./resources/css/style.css" type="text/css">
-    <link rel="stylesheet" href="./resources/css/index.css" type="text/css">
-    <title>Welcome Dear!</title>
+    <title>You are visiting Rony's Protfolio</title>
+    <link rel="stylesheet" href="./resources/css/all.css">
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/vendor/Magnific-Popup/magnific-popup.css">
+    <!-- Custom css file-->
+    <link rel="stylesheet" href="./resources/css/style.css">
 </head>
 
+<body>
 
-<body class="full-height-grow container">
-    <!--Nav markup starts-->
-    <!-- <div class="navbar-wrapper">
-        <div class="left-side">
-            <div class="nav-link-wrapper active-nav-link">
-                <a href="index.html">Home</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="resume.html">Resume/CV</a>
-            </div>
-            <div class="nav-link-wrapper">
-                <a href="contact.html">Contact</a>
-            </div>
-        </div>
-        <div class="right-side">
-            <div class="brand">
-                Asif Mahmud Rony
-            </div>
-        </div>
-    </div> -->
-    <nav class="navbar">
-        <span class="open-slide">
-            <a href="#" class="menu-btn" onclick="openSlideMenu()">
-                <svg width="30" height="30">
-                    <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
-                    <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
-                    <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
-                </svg>
-            </a>
-        </span>
-
-        <!-- <ul class="navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul> -->
-        <span>
-            <a href="./Asif's_Resume.pdf" download class="btn" id="btn-orange">Download CV</a>
-        </span>
-    </nav>
-
-    <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="./index.html">Home</a>
-        <a href="./resume.html">Resume</a>
-        <a href="./contact.html">Contact</a>
-    </div>
-    <!--Nav markup end-->
-
-    <!--Main Content section starts-->
+    <!--======================= Home main seciton Start ===========================-->
     <section class="home-main-section">
         <div class="call-to-action" id="main">
-            <span class="welcome-text">Hello there...</span>
-            <h1 class="title">Asif Mahmud Rony</h1>
-            <span class="subtitle">I am passionate Designer, Developer and Digital Marketer</span>
-            <span class="regular-text">Self Taught Web developer who is currently providing services
-                like UI/UX design, Website Development and Digital Marketing</span>
+            <p class="welcome-text">Hello there,</p>
+            <h1 class="title">I'm <span class="name">Asif Mahmud Rony</span></h1>
+            <p class="subtitle">I design and build Websites</p>
             <div class="links">
-                <a href='join.html' class="btn">My work</a>
-                <a href='join.html' class="btn">Hire Me</a>
+                <a href='join.html' class="my-work-btn btn">My work</a>
+                <a href='join.html' class="hire-me-btn btn">Hire Me</a>
             </div>
         </div>
         <div class="img-wrapper">
-            <div class="my-image"></div>
+            <!-- <div class="my-image"></div> -->
+            <img src="./resources/images/myphoto_bgremoved.png" alt="my photo">
         </div>
     </section>
 
-    <div class="home-page-circle-1"></div>
-    <div class="home-page-circle-2"></div>
-    <div class="home-page-circle-3"></div>
 
-    <script>
-        function openSlideMenu() {
-            document.getElementById("side-menu").style.width = '250px';
-            document.getElementById("main").style.marginLeft = '250px';
-        }
+    <!--======================= About me seciton Start ===========================-->
+    <section class="about-container">
+        <div class="about-me">
+            <img src="./resources/images/about-us.png" alt="about me avatar" height="250" width="290">
+            <div class="about-text">
+                <p>About Me</p>
+                <p>Developer & Designer</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas facere
+                    cumque numquam eligendi quae commodi ducimus iste, mollitia est neque.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et alias voluptatibus, ipsa neque eveniet
+                    quia
+                    doloremque voluptatem? Voluptatibus, nobis repellendus dolores, fugiat adipisci ratione
+                    consequuntur,
+                    maiores eos consequatur eum minima!</p>
+                <div class="about-button-container">
+                    <button>Hire Me</button>
+                    <button>Download CV</button>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        function closeSlideMenu() {
-            document.getElementById("side-menu").style.width = '0';
-            document.getElementById("main").style.marginLeft = '0';
-        }
-    </script>
+    <!--======================= project seciton Start ===========================-->
+    <section class="featured-projects-container">
+        <div class="featured-projects">
+            <div class="heading-texts">
+                <h2>Featured Projects</h2>
+                <p></p>
+            </div>
+            <div class="button-group">
+                <button type="button" class="active" id="btn-all" data-filter="*">All</button>
+                <button type="button" data-filter=".latest">Latest</button>
+                <button type="button" data-filter=".ui-design">UI Design</button>
+                <button type="button" data-filter=".web-design">Web Design</button>
+                <button type="button" data-filter=".development">Development</button>
+            </div>
+            <div class="row grid">
+                <div class="col-12 col-sm-6 col-lg-4 element-item latest">
+                    <div class="img-wrapper">
+                        <a class="mp-container" href="./resources/images/portfolio/p1.jpg">
+                            <img src="./resources/images/portfolio/p1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="description">
+                        <h4>Minimal Design</h4>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 element-item ui-design">
+                    <div class="img-wrapper">
+                        <img src="./resources/images/portfolio/p2.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4>SOLID principle</h4>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 element-item latest">
+                    <div class="img-wrapper">
+                        <img src="./resources/images/portfolio/p3.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4>Travel Review Website</h4>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 element-item ui-design">
+                    <div class="img-wrapper">
+                        <img src="./resources/images/portfolio/p4.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4>Personal Management App</h4>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 element-item web-design">
+                    <div class="img-wrapper">
+                        <img src="./resources/images/portfolio/p5.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4>My Portfolio</h4>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-4 element-item development">
+                    <div class="img-wrapper">
+                        <img src="./resources/images/portfolio/p6.jpg" alt="">
+                    </div>
+                    <div class="description">
+                        <h4>Artistico Development Project</h4>
+                        <p>Lorem, ipsum dolor.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-me-wrapper">
+        <div class="contact-me">
+            <h4>If You Have Any Project In Your Mind.</h4>
+            <a href="contact.html" class="btn btn-white">Contact Me</a>
+        </div>
+    </section>
+
+    <section class="footer-wrapper">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <a href="#">AMR.</a>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Odio earum, rem consequatur iste fugit
+                temporibus molestias magni aperiam ipsam voluptas.
+            </p>
+            <div class="footer-social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>Copyright &copy; 2020 by Asif Mahmud Rony</p>
+        </div>
+    </section>
+
+    <script src="./resources/js/jquery-3.4.1.min.js"></script>
+    <script src="./resources/js/bootstrap.min.js"></script>
+    <script src="./resources/vendor/isotope/isotope.min.js"></script>
+    <script src="./resources/vendor/Magnific-Popup/magnific-popup.min.js"></script>
+    <!--Main JS file-->
+    <script src="./resources/js/main.js"></script>
 </body>
 
 </html>

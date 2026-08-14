@@ -263,11 +263,13 @@ textarea {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
-  margin-top: 2rem;
-  padding-bottom: 2px;
+  /* No top margin: this sits inline inside an <h3>, where a vertical margin
+     inflates the heading's line box and opens a gap on titles that wrap. */
+  margin-top: 0;
   color: var(--accent);
   font-size: var(--step-body);
   font-weight: 600;
+  vertical-align: middle;
   transform: rotate(-45deg);
   transition:
     transform 0.35s var(--ease-out),
@@ -512,9 +514,9 @@ textarea {
        edge itself, not left floating above it */
   bottom: calc(-1 * clamp(4rem, 8vw, 7rem));
   width: clamp(300px, 34vw, 450px);
-  /* explicit box: the portrait is 3264x4928, so reserve its ratio rather than
+  /* explicit box: reserve the portrait ratio rather than
        letting the replaced child size the absolutely-positioned parent */
-  aspect-ratio: 3264 / 4928;
+  aspect-ratio: 900 / 1358;
   pointer-events: none;
 }
 
@@ -810,14 +812,11 @@ textarea {
   transform: rotateX(7deg) rotateY(-15deg) rotateZ(3deg) scale(1.08)
     translateY(6%);
   box-shadow: 0 34px 60px -30px rgba(0, 0, 0, 0.85);
-  /* PLACEHOLDER TREATMENT: p1–p4.jpg are light stock photos that fight the dark
-       band. This sinks them into the world. Drop the filter once real, dark
-       product screenshots replace them. */
-  filter: grayscale(0.7) brightness(0.6) contrast(1.12);
+  /* Real product screenshots ship at full fidelity — they are already dark UI
+     and sit in the band unaided. The tilt and shadow carry the interaction. */
   transition:
     transform 0.7s var(--ease-out),
-    box-shadow 0.7s var(--ease-out),
-    filter 0.7s var(--ease-out);
+    box-shadow 0.7s var(--ease-out);
 }
 
 .work-card:hover .work-card__shot img,
@@ -825,7 +824,6 @@ textarea {
   transform: rotateX(2deg) rotateY(-6deg) rotateZ(1deg) scale(1.11)
     translateY(4%);
   box-shadow: 0 42px 70px -30px rgba(0, 0, 0, 0.9);
-  filter: grayscale(0.15) brightness(0.9) contrast(1.05);
 }
 
 /* ==========================================================================

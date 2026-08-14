@@ -1,172 +1,876 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>You are visiting Rony's Protfolio</title>
-    <link rel="stylesheet" href="./resources/css/all.css">
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./resources/vendor/Magnific-Popup/magnific-popup.css">
+    <title>
+      Asif Mahmud Rony — Senior Frontend Engineer &amp; Full Stack Developer
+    </title>
+    <meta
+      name="description"
+      content="Senior Frontend Engineer and Full Stack Developer based in Dhaka. Six years building OTT/VOD streaming platforms, payment gateways, and Samsung Tizen TV apps with React, Next.js and TypeScript."
+    />
+    <meta name="author" content="Asif Mahmud Rony" />
+    <meta name="theme-color" content="#2E313C" />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Asif Mahmud Rony — Senior Frontend Engineer &amp; Full Stack Developer"
+    />
+    <meta
+      property="og:description"
+      content="Six years building OTT/VOD streaming platforms, payment gateways, and Samsung Tizen TV apps. Open to freelance and project-based work."
+    />
+    <meta property="og:url" content="https://asifmrony.github.io/" />
+    <meta
+      property="og:image"
+      content="https://asifmrony.github.io/resources/images/myphoto_bgremoved.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link
+      rel="preload"
+      href="./resources/fonts/Poppins/poppins-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./resources/fonts/Poppins/poppins-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+
+    <link rel="stylesheet" href="./resources/css/all.css" />
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="./resources/vendor/Magnific-Popup/magnific-popup.css"
+    />
     <!-- Custom css file-->
-    <link rel="stylesheet" href="./resources/css/style.css">
-</head>
+    <link rel="stylesheet" href="./resources/css/style.css" />
+  </head>
 
-<body>
+  <body>
+    <!--
+      THESIS: A senior streaming-platform engineer's record, laid out as a dark editorial spread that
+      refuses the light-card portfolio grid its category always ships.
+      OWN-WORLD: Navy-charcoal grounds in two alternating bands, a single amber accent doing every job
+      (rule, link, numeral, one filled card), Poppins geometric sans, headings terminated with a period,
+      em-dash eyebrow labels, hairline separators, no borders as section dividers.
+      STORY: A visitor sees the name, the discipline, and the streaming specialism inside one viewport,
+      scans proof (years, clients, stack, shipped products), and leaves via email or the contact form.
+      FIRST VIEWPORT: Logo left / nav right. Name at display scale over two lines, amber rule beneath,
+      social row. Cut-out portrait bleeding between the columns. Right column carries the introduction
+      and "My story" link. Primary action is the email address one band below.
+      FORM: Pinned by the user's supplied comp (Dribbble portfolio walkthrough, 17 frames extracted);
+      no concept roll — a brief-pinned direction beats the roll.
+      FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+    -->
 
-    <!--======================= Home main seciton Start ===========================-->
-    <section class="home-main-section">
-        <div class="call-to-action" id="main">
-            <p class="welcome-text">Hello there,</p>
-            <h1 class="title">I'm <span class="name">Asif Mahmud Rony</span></h1>
-            <p class="subtitle">I design and build Websites</p>
-            <div class="links">
-                <a href='join.html' class="my-work-btn btn">My work</a>
-                <a href='join.html' class="hire-me-btn btn">Hire Me</a>
-            </div>
-        </div>
-        <div class="img-wrapper">
-            <!-- <div class="my-image"></div> -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!--======================= Site header ===========================-->
+    <header class="site-header" id="siteHeader">
+      <div class="shell site-header__inner">
+        <a class="brand" href="#main" aria-label="Asif Mahmud Rony — home">
+          <svg
+            class="brand__mark"
+            viewBox="0 0 40 40"
+            width="40"
+            height="40"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M20 1.5c10.22 0 18.5 8.28 18.5 18.5S30.22 38.5 20 38.5 1.5 30.22 1.5 20 9.78 1.5 20 1.5Z"
+              fill="var(--accent)"
+            />
+            <path
+              d="M16.5 13.6v12.8L27.4 20 16.5 13.6Z"
+              fill="var(--ink-900)"
+            />
+          </svg>
+          <span class="brand__word">AMR.</span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <button
+            class="site-nav__toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primaryNav"
+            aria-label="Open menu"
+          >
+            <span class="site-nav__bar"></span>
+            <span class="site-nav__bar"></span>
+          </button>
+          <ul class="site-nav__list" id="primaryNav">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Works</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!--======================= 1. Hero ===========================-->
+      <section class="hero band band--mid">
+        <div class="shell hero__grid">
+          <div class="hero__identity">
+            <h1 class="hero__name reveal">
+              Asif Mahmud<br />Rony<span class="dot">.</span>
+            </h1>
+            <span class="rule reveal" aria-hidden="true"></span>
+            <ul class="social social--hero reveal" aria-label="Profiles">
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/asifmrony"
+                  aria-label="LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a href="https://github.com/asifmrony" aria-label="GitHub"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com/rony.tj/"
+                  aria-label="facebook"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__portrait" aria-hidden="true">
             <picture>
-                <source type="image/webp" srcset="./resources/images/myphoto_bgremoved.webp">
-                <source type="image/png" srcset="./resources/images/myphoto_bgremoved.png">
-                <img src="./resources/images/myphoto_bgremoved.png" alt="photo of Asif Mahmud Rony">
+              <source
+                type="image/webp"
+                srcset="./resources/images/myphoto_bgremoved.webp"
+              />
+              <img
+                src="./resources/images/myphoto_bgremoved.png"
+                alt=""
+                width="3264"
+                height="4928"
+                fetchpriority="high"
+              />
             </picture>
-        </div>
-    </section>
+          </div>
 
-
-    <!--======================= About me seciton Start ===========================-->
-    <section class="about-container">
-        <div class="about-me">
-            <img src="./resources/images/about-us.png" alt="about me avatar" height="250" width="290">
-            <div class="about-text">
-                <p>About Me</p>
-                <p>Developer & Designer</p>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas facere
-                    cumque numquam eligendi quae commodi ducimus iste, mollitia est neque.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et alias voluptatibus, ipsa neque eveniet
-                    quia
-                    doloremque voluptatem? Voluptatibus, nobis repellendus dolores, fugiat adipisci ratione
-                    consequuntur,
-                    maiores eos consequatur eum minima!</p>
-                <div class="about-button-container">
-                    <button>Hire Me</button>
-                    <button>Download CV</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--======================= project seciton Start ===========================-->
-    <section class="featured-projects-container">
-        <div class="featured-projects">
-            <div class="heading-texts">
-                <h2>Featured Projects</h2>
-                <p></p>
-            </div>
-            <div class="button-group">
-                <button type="button" class="active" id="btn-all" data-filter="*">All</button>
-                <button type="button" data-filter=".latest">Latest</button>
-                <button type="button" data-filter=".ui-design">UI Design</button>
-                <button type="button" data-filter=".web-design">Web Design</button>
-                <button type="button" data-filter=".development">Development</button>
-            </div>
-            <div class="row grid">
-                <div class="col-12 col-sm-6 col-lg-4 element-item latest">
-                    <div class="img-wrapper">
-                        <a class="mp-container" href="./resources/images/portfolio/p1.jpg">
-                            <img src="./resources/images/portfolio/p1.jpg" alt="">
-                        </a>
-                    </div>
-                    <div class="description">
-                        <h4>Minimal Design</h4>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 element-item ui-design">
-                    <div class="img-wrapper">
-                        <img src="./resources/images/portfolio/p2.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <h4>SOLID principle</h4>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 element-item latest">
-                    <div class="img-wrapper">
-                        <img src="./resources/images/portfolio/p3.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <h4>Travel Review Website</h4>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 element-item ui-design">
-                    <div class="img-wrapper">
-                        <img src="./resources/images/portfolio/p4.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <h4>Personal Management App</h4>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 element-item web-design">
-                    <div class="img-wrapper">
-                        <img src="./resources/images/portfolio/p5.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <h4>My Portfolio</h4>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 element-item development">
-                    <div class="img-wrapper">
-                        <img src="./resources/images/portfolio/p6.jpg" alt="">
-                    </div>
-                    <div class="description">
-                        <h4>Artistico Development Project</h4>
-                        <p>Lorem, ipsum dolor.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section class="contact-me-wrapper">
-        <div class="contact-me">
-            <h4>If You Have Any Project In Your Mind.</h4>
-            <a href="contact.html" class="btn btn-white">Contact Me</a>
-        </div>
-    </section>
-
-    <section class="footer-wrapper">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a href="#">AMR.</a>
-            </div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Odio earum, rem consequatur iste fugit
-                temporibus molestias magni aperiam ipsam voluptas.
+          <div class="hero__intro">
+            <p class="eyebrow reveal">Introduction</p>
+            <h2 class="lead reveal">
+              Senior Frontend Engineer and Full Stack Developer, based in Dhaka.
+            </h2>
+            <p class="prose reveal">
+              Six years building production frontends at scale — OTT and VOD
+              streaming platforms, a multi-platform payment gateway, and a
+              Samsung Tizen television app. Two years across backend, one across
+              cross-platform mobile.
             </p>
-            <div class="footer-social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-            <p>Copyright &copy; 2020 by Asif Mahmud Rony</p>
+            <a class="link-arrow reveal" href="#services"
+              >My story
+              <svg
+                class="i-arrow"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 12h15M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
         </div>
-    </section>
+      </section>
+
+      <!--======================= 2. Availability + stats ===========================-->
+      <section class="stats band band--deep">
+        <div class="shell stats__grid">
+          <div class="stats__pitch">
+            <p class="eyebrow reveal">Available</p>
+            <h2 class="h-section reveal">
+              Open to freelance<br />&amp; project work<span class="dot"
+                >.</span
+              >
+            </h2>
+            <p class="prose reveal">
+              Taking on frontend architecture, streaming and video delivery, and
+              full-stack builds — scoped by project or by retainer.
+            </p>
+            <a class="link-arrow reveal" href="mailto:asifmrony@gmail.com"
+              >asifmrony@gmail.com
+              <svg
+                class="i-arrow"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 12h15M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+
+          <div class="stats__claim">
+            <blockquote class="pull-quote reveal">
+              <p>
+                Performance isn't a phase at the end of a project. It's a
+                decision you make inside every component you write.
+              </p>
+            </blockquote>
+            <dl class="figures">
+              <div class="figure reveal">
+                <dt class="figure__num">6+</dt>
+                <dd class="figure__label">Years of<br />Experience.</dd>
+              </div>
+              <div class="figure reveal">
+                <dt class="figure__num">9</dt>
+                <dd class="figure__label">Notable<br />Clients.</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!--======================= 3. Services ===========================-->
+      <section class="services" id="services">
+        <div class="shell">
+          <ul class="services__list">
+            <li class="service service--lead reveal">
+              <svg
+                class="service__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M8 17 3 12l5-5M16 7l5 5-5 5M14 4l-4 16" />
+              </svg>
+              <h3 class="service__title">
+                Senior Frontend<br />Engineer<span class="dot">.</span>
+              </h3>
+              <p class="service__meta">React · Next.js · TypeScript</p>
+            </li>
+            <li class="service reveal">
+              <svg
+                class="service__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <rect x="3" y="4" width="18" height="6" rx="1.5" />
+                <rect x="3" y="14" width="18" height="6" rx="1.5" />
+                <path d="M7 7h.01M7 17h.01" />
+              </svg>
+              <h3 class="service__title">
+                Full Stack<br />Developer<span class="dot">.</span>
+              </h3>
+              <p class="service__meta">Node.js · Express · PostgreSQL</p>
+            </li>
+            <li class="service reveal">
+              <svg
+                class="service__icon"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M12 3 3 8.5 12 14l9-5.5L12 3Z" />
+                <path d="M3 15.5 12 21l9-5.5" />
+              </svg>
+              <h3 class="service__title">
+                Product<br />Designer<span class="dot">.</span>
+              </h3>
+              <p class="service__meta">UI/UX · Design systems · Conversion</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--======================= 4. Clients ===========================-->
+      <section class="clients band band--mid" aria-label="Clients">
+        <div class="shell">
+          <p class="clients__intro reveal">Work delivered for teams at</p>
+          <ul class="clients__list">
+            <li class="wordmark wordmark--caps reveal">Impress Telefilm</li>
+            <li class="wordmark wordmark--lower reveal">robi</li>
+            <li class="wordmark wordmark--lower reveal">grameenphone</li>
+            <li class="wordmark wordmark--lower reveal">banglalink</li>
+            <li class="wordmark wordmark--caps reveal">BRAC Bank</li>
+            <li class="wordmark wordmark--caps reveal">Urduflix</li>
+            <li class="wordmark wordmark--title reveal">Funprime</li>
+            <li class="wordmark wordmark--caps reveal">Springdale</li>
+            <li class="wordmark wordmark--caps reveal">CMV Music</li>
+          </ul>
+        </div>
+      </section>
+
+      <!--======================= 5. Selected work ===========================-->
+      <section class="work band band--mid" id="work">
+        <div class="shell work__grid">
+          <div class="work__intro">
+            <p class="eyebrow reveal">Portfolio</p>
+            <h2 class="h-section reveal">
+              Selected work,<br />shipped to production<span class="dot"
+                >.</span
+              >
+            </h2>
+            <p class="prose reveal">
+              Streaming platforms, gaming portals, and payment infrastructure —
+              built for audiences measured in the hundreds of thousands.
+            </p>
+            <a class="link-arrow reveal" href="https://github.com/asifmrony"
+              >Explore more
+              <svg
+                class="i-arrow"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 12h15M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </div>
+
+          <!-- PLACEHOLDER IMAGERY: p1–p4.jpg are generic stock. Replace with real project
+                     screenshots; markup and sizing stay as-is. -->
+          <div class="work__cards">
+            <article class="work-card reveal">
+              <header class="work-card__head">
+                <h3 class="work-card__title">
+                  Iscreen<span class="dot">.</span>
+                  <a class="link-only-arrow" href="https://iscreen.com.bd/">
+                    <svg
+                      class="i-arrow"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M4 12h15M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                </h3>
+                <p class="work-card__tag">OTT · Streaming</p>
+              </header>
+              <p class="work-card__note">
+                VOD and live playback on Video.js with HLS, tuned for smooth
+                start-up and steady bitrate. Shipped to web and to Samsung Tizen
+                TV.
+              </p>
+              <a
+                class="work-card__shot mp-item"
+                href="./resources/images/portfolio/iscreen-web-app-by-asifmrony.png"
+                title="Iscreen — OTT/VOD streaming platform"
+              >
+                <img
+                  src="./resources/images/portfolio/iscreen-web-app-by-asifmrony.png"
+                  alt="Iscreen streaming platform interface"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </article>
+
+            <article class="work-card reveal">
+              <header class="work-card__head">
+                <h3 class="work-card__title">
+                  Bingepluslive<span class="dot">.</span>
+                  <a class="link-only-arrow" href="https://bingepluslive.com/">
+                    <svg
+                      class="i-arrow"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M4 12h15M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                </h3>
+                <p class="work-card__tag">Aggregator · Streaming</p>
+              </header>
+              <p class="work-card__note">
+                FIFA World Cup 2026, live TV, sports, movies playback on
+                Video.js with HLS and Key Encryption, tuned for smooth start-up
+                and offline fallback architecture, Powered by Tencent Cloud.
+                Shipped to web and Robi Single app.
+              </p>
+              <a
+                class="work-card__shot mp-item"
+                href="./resources/images/portfolio/bingeplus-web-app-by-asifmrony_v2.png"
+                title="Iscreen — OTT/VOD streaming platform"
+              >
+                <img
+                  src="./resources/images/portfolio/bingeplus-web-app-by-asifmrony_v2.png"
+                  alt="Iscreen streaming platform interface"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </article>
+
+            <article class="work-card reveal">
+              <header class="work-card__head">
+                <h3 class="work-card__title">
+                  Game2wins<span class="dot">.</span>
+                  <a class="link-only-arrow" href="https://www.game2wins.com/">
+                    <svg
+                      class="i-arrow"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M4 12h15M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                </h3>
+                <p class="work-card__tag">Web · Gaming</p>
+              </header>
+              <p class="work-card__note">
+                A Next.js frontend architected to embed third-party HTML5 games,
+                so titles from many vendors play in-browser without a per-game
+                integration.
+              </p>
+              <a
+                class="work-card__shot mp-item"
+                href="./resources/images/portfolio/game2wins_web_app_asifmrony.png"
+                title="Game2wins — HTML5 gaming platform"
+              >
+                <img
+                  src="./resources/images/portfolio/game2wins_web_app_asifmrony.png"
+                  alt="Game2wins gaming platform interface"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </article>
+
+            <article class="work-card reveal">
+              <header class="work-card__head">
+                <h3 class="work-card__title">
+                  Payment Gateway<span class="dot">.</span>
+                  <a
+                    class="link-only-arrow"
+                    href="https://payment.rockstreamer.com/?country=BD"
+                  >
+                    <svg
+                      class="i-arrow"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M4 12h15M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                </h3>
+                <p class="work-card__tag">Fintech · Multi-platform</p>
+              </header>
+              <p class="work-card__note">
+                One checkout contract spanning web, Android and iOS, integrated
+                across a microservice backend through 50+ REST endpoints.
+              </p>
+              <a
+                class="work-card__shot mp-item"
+                href="./resources/images/portfolio/single-web-payment-by-asifmrony.png"
+                title="Multi-platform payment gateway"
+              >
+                <img
+                  src="./resources/images/portfolio/single-web-payment-by-asifmrony.png"
+                  alt="Payment gateway checkout interface"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </article>
+
+            <article class="work-card reveal">
+              <header class="work-card__head">
+                <h3 class="work-card__title">
+                  Tizen TV App<span class="dot">.</span>
+                  <a
+                    class="link-only-arrow"
+                    href="https://www.samsung.com/my/tvs/smart-tv/samsung-tv-apps-detail/?appId=3202310032772"
+                  >
+                    <svg
+                      class="i-arrow"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path d="M4 12h15M13 6l6 6-6 6" />
+                    </svg>
+                  </a>
+                </h3>
+                <p class="work-card__tag">Smart TV · Samsung</p>
+              </header>
+              <p class="work-card__note">
+                A ten-foot interface built for the remote control, not the
+                cursor. Client satisfaction rose about 30% within months of
+                launch.
+              </p>
+              <a
+                class="work-card__shot mp-item"
+                href="./resources/images/portfolio/iscreen-samsung-tizen-app-by-asifmrony.jpg"
+                title="Samsung Tizen television application"
+              >
+                <img
+                  src="./resources/images/portfolio/iscreen-samsung-tizen-app-by-asifmrony.jpg"
+                  alt="Samsung Tizen TV application interface"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--======================= 6. Blog ===========================-->
+      <!-- PLACEHOLDER CONTENT: these three entries are unwritten drafts, marked "Draft" rather than
+             carrying invented publish dates. Replace title + date + href when posts go live. -->
+      <section class="blog band band--deep" id="blog">
+        <div class="shell blog__grid">
+          <div class="blog__intro">
+            <p class="eyebrow reveal">Blog</p>
+            <h2 class="h-section reveal">
+              What's new?<br />Notes on the craft<span class="dot">.</span>
+            </h2>
+            <p class="prose reveal">
+              Working notes on frontend performance, video delivery, and
+              building for screens that aren't a laptop.
+            </p>
+          </div>
+
+          <ul class="post-list">
+            <li class="post reveal">
+              <a href="#blog">
+                <span class="post__meta">Draft · Performance</span>
+                <span class="post__title"
+                  >Raising Core Web Vitals from F to A</span
+                >
+                <svg
+                  class="i-arrow"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M4 12h15M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </li>
+            <li class="post reveal">
+              <a href="#blog">
+                <span class="post__meta">Draft · Streaming</span>
+                <span class="post__title"
+                  >HLS playback that doesn't stutter</span
+                >
+                <svg
+                  class="i-arrow"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M4 12h15M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </li>
+            <li class="post reveal">
+              <a href="#blog">
+                <span class="post__meta">Draft · Platforms</span>
+                <span class="post__title"
+                  >Designing for a remote control, not a cursor</span
+                >
+                <svg
+                  class="i-arrow"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M4 12h15M13 6l6 6-6 6" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!--======================= 7. Testimonials ===========================-->
+      <!-- PLACEHOLDER CONTENT: no real testimonials supplied. Quotes and attributions below are
+             clearly-marked stand-ins — replace all three before publishing. Do not ship as-is. -->
+      <!-- <section class="testimonial band band--deep" aria-label="Testimonials">
+        <div class="shell testimonial__grid">
+          <figure class="testimonial__figure reveal">
+            <div class="testimonial__portrait" aria-hidden="true">
+              <span class="placeholder-chip">Client photo</span>
+            </div>
+            <div class="testimonial__body">
+              <svg
+                class="quote-mark"
+                viewBox="0 0 40 30"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path
+                  d="M0 30V16.5C0 7.4 5.2 1.3 14.6 0l1.6 4.6c-5.4 1.3-8.1 4.3-8.1 9h7.3V30H0Zm23.8 0V16.5C23.8 7.4 29 1.3 38.4 0L40 4.6c-5.4 1.3-8.1 4.3-8.1 9h7.3V30H23.8Z"
+                />
+              </svg>
+              <div class="testimonial__slides">
+                <blockquote class="testimonial__slide is-active">
+                  <p>
+                    Client testimonial goes here — the quote you'd most want a
+                    prospective client to read first.
+                  </p>
+                  <figcaption>
+                    <span class="testimonial__name">Client name</span>
+                    <span class="testimonial__role">Role, Company</span>
+                  </figcaption>
+                </blockquote>
+                <blockquote class="testimonial__slide">
+                  <p>
+                    Second testimonial goes here — ideally one that speaks to
+                    delivery, communication, or how the work held up over time.
+                  </p>
+                  <figcaption>
+                    <span class="testimonial__name">Client name</span>
+                    <span class="testimonial__role">Role, Company</span>
+                  </figcaption>
+                </blockquote>
+                <blockquote class="testimonial__slide">
+                  <p>
+                    Third testimonial goes here — a short one works well as a
+                    closer.
+                  </p>
+                  <figcaption>
+                    <span class="testimonial__name">Client name</span>
+                    <span class="testimonial__role">Role, Company</span>
+                  </figcaption>
+                </blockquote>
+              </div>
+              <div
+                class="testimonial__tabs"
+                role="tablist"
+                aria-label="Testimonials"
+              >
+                <button
+                  class="testimonial__tab is-active"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                  aria-label="Testimonial 1"
+                ></button>
+                <button
+                  class="testimonial__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Testimonial 2"
+                ></button>
+                <button
+                  class="testimonial__tab"
+                  type="button"
+                  role="tab"
+                  aria-selected="false"
+                  aria-label="Testimonial 3"
+                ></button>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section> -->
+
+      <!--======================= 8. Contact ===========================-->
+      <section class="contact band band--mid" id="contact">
+        <div class="shell contact__grid">
+          <div class="contact__pitch">
+            <h2 class="h-section reveal">
+              Got a project?<br />Let's talk<span class="dot">.</span>
+            </h2>
+            <p class="prose reveal">
+              Tell me what you're building and roughly when you need it. I reply
+              within a working day.
+            </p>
+            <a class="link-arrow reveal" href="mailto:asifmrony@gmail.com"
+              >asifmrony@gmail.com
+              <svg
+                class="i-arrow"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 12h15M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <p class="contact__aside reveal">
+              Banasree, Dhaka ·
+              <a href="tel:+8801793726776">+880 1793 726776</a>
+            </p>
+          </div>
+
+          <!-- Web3Forms. main.js intercepts submit and POSTs JSON so the visitor
+               stays on the page; the action/method below are the no-JS fallback,
+               which Web3Forms handles natively. -->
+          <form
+            action="https://api.web3forms.com/submit"
+            method="POST"
+            class="contact__form"
+            id="contactForm"
+            novalidate
+          >
+            <h2 class="h-section reveal">
+              Estimate your project?<br />Let me know here<span class="dot"
+                >.</span
+              >
+            </h2>
+            <!-- Web3Forms access key. Public by design — it identifies the
+                 destination inbox, it is not a secret. -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="9fdb7202-09ef-4809-bbe8-96893cc20223"
+            />
+            <!-- Fallback values for the no-JS POST; main.js sends a per-message
+                 subject that names the sender. -->
+            <input
+              type="hidden"
+              name="subject"
+              value="New project enquiry from asifmrony.github.io"
+            />
+            <input type="hidden" name="from_name" value="asifmrony.github.io" />
+
+            <div class="field reveal">
+              <label for="cf-name">What's your name?</label>
+              <input
+                type="text"
+                id="cf-name"
+                name="name"
+                autocomplete="name"
+                required
+              />
+              <p class="field__error" data-error-for="cf-name"></p>
+            </div>
+
+            <div class="field reveal">
+              <label for="cf-email">Your email</label>
+              <input
+                type="email"
+                id="cf-email"
+                name="email"
+                autocomplete="email"
+                required
+              />
+              <p class="field__error" data-error-for="cf-email"></p>
+            </div>
+
+            <div class="field field--send reveal">
+              <label for="cf-message">Tell me about your project</label>
+              <textarea
+                id="cf-message"
+                name="message"
+                rows="1"
+                required
+              ></textarea>
+
+              <!-- Honeypot Spam Protection -->
+              <input
+                type="checkbox"
+                name="botcheck"
+                class="hidden"
+                style="display: none"
+              />
+
+              <button
+                class="field__send"
+                type="submit"
+                aria-label="Send message"
+              >
+                <svg
+                  class="i-arrow"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path d="M4 12h15M13 6l6 6-6 6" />
+                </svg>
+              </button>
+              <p class="field__error" data-error-for="cf-message"></p>
+            </div>
+
+            <p
+              class="form__status"
+              id="formStatus"
+              role="status"
+              aria-live="polite"
+            ></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--======================= 9. Footer ===========================-->
+    <footer class="site-footer band band--mid">
+      <div class="shell site-footer__inner">
+        <a class="brand brand--stacked" href="#main" aria-label="Back to top">
+          <svg
+            class="brand__mark"
+            viewBox="0 0 40 40"
+            width="48"
+            height="48"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path
+              d="M20 1.5c10.22 0 18.5 8.28 18.5 18.5S30.22 38.5 20 38.5 1.5 30.22 1.5 20 9.78 1.5 20 1.5Z"
+              fill="var(--accent)"
+            />
+            <path
+              d="M16.5 13.6v12.8L27.4 20 16.5 13.6Z"
+              fill="var(--ink-900)"
+            />
+          </svg>
+        </a>
+        <p class="site-footer__sign">
+          <strong>Thanks for scrolling,</strong> that's all folks.
+        </p>
+        <ul class="social" aria-label="Profiles">
+          <li>
+            <a href="https://github.com/asifmrony" aria-label="GitHub"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/rony.tj/" aria-label="Facebook"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/asifmrony"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://bn.quora.com/profile/Asif-Mahamud-Rony"
+              aria-label="Quora"
+              ><i class="fab fa-quora"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="site-footer__legal">&copy; 2026 Asif Mahmud Rony</p>
+      </div>
+    </footer>
 
     <script src="./resources/js/jquery-3.4.1.min.js"></script>
-    <script src="./resources/js/bootstrap.min.js"></script>
-    <script src="./resources/vendor/isotope/isotope.min.js"></script>
     <script src="./resources/vendor/Magnific-Popup/magnific-popup.min.js"></script>
     <!--Main JS file-->
     <script src="./resources/js/main.js"></script>
-</body>
-
+  </body>
 </html>

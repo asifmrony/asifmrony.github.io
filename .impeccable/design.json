@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "title": "Design System: Asif Mahmud Rony Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "amber": {
+        "role": "primary",
+        "displayName": "Signal Amber",
+        "canonical": "#F9B233",
+        "tonalRamp": ["#2A1C05", "#4A320A", "#6B4810", "#8F6215", "#C1841D", "#F9B233", "#FBC768", "#FDE3B4"]
+      },
+      "ink-900": {
+        "role": "neutral",
+        "displayName": "Deep Band",
+        "canonical": "#22252E",
+        "tonalRamp": ["#0D0E12", "#15171D", "#1C1E26", "#22252E", "#2E313C", "#3D414F", "#5A5F70", "#8A8F9E"]
+      },
+      "ink-800": {
+        "role": "neutral",
+        "displayName": "Mid Band",
+        "canonical": "#2E313C",
+        "tonalRamp": ["#101117", "#181A21", "#22252E", "#2E313C", "#3D414F", "#565B6C", "#7C8292", "#AFB4C0"]
+      },
+      "ink-750": {
+        "role": "neutral",
+        "displayName": "Raised Panel",
+        "canonical": "#343845",
+        "tonalRamp": ["#121319", "#1B1D25", "#252832", "#343845", "#454A5A", "#5F6577", "#868C9C", "#B6BAC5"]
+      },
+      "ink-700": {
+        "role": "neutral",
+        "displayName": "Raised Panel High",
+        "canonical": "#3D414F",
+        "tonalRamp": ["#15161C", "#1F2128", "#2B2E38", "#3D414F", "#4E5364", "#6B7183", "#939AAA", "#C0C4CD"]
+      },
+      "fg": {
+        "role": "neutral",
+        "displayName": "Full Ink",
+        "canonical": "#F2F3F5",
+        "tonalRamp": ["#2E313C", "#4A4E5A", "#6E7481", "#9AA0AD", "#C2C6CE", "#E0E2E7", "#F2F3F5", "#FBFBFC"]
+      },
+      "fg-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#9AA0AD",
+        "tonalRamp": ["#22252E", "#363A46", "#4C515F", "#666C7A", "#828896", "#9AA0AD", "#BCC1CA", "#DEE0E5"]
+      },
+      "fg-faint": {
+        "role": "neutral",
+        "displayName": "Faint Ink",
+        "canonical": "#6E7481",
+        "tonalRamp": ["#1A1C22", "#282B34", "#383C47", "#4A4F5C", "#5C6270", "#6E7481", "#98 9DA9", "#C4C8D0"]
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Recovery Coral",
+        "canonical": "#FFAE9B",
+        "tonalRamp": ["#3A1A12", "#5C271B", "#7F3626", "#A54934", "#CB6449", "#E88870", "#FFAE9B", "#FFD3C7"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "The name in the hero. Once per page, nowhere else." },
+      "headline": { "displayName": "Headline", "purpose": "Section headings, broken over two lines with an explicit <br>." },
+      "title": { "displayName": "Title", "purpose": "Hero introduction, pull quote, testimonial quotes — a sentence meant to be read." },
+      "body": { "displayName": "Body", "purpose": "Paragraph copy. 46ch in split layouts, 58ch stacked." },
+      "label": { "displayName": "Label", "purpose": "Eyebrow labels and the client-strip lead-in. Uppercase, 0.22em tracking." }
+    },
+    "shadows": [
+      { "name": "lifted-card", "value": "0 26px 44px -26px rgba(0,0,0,0.75)", "purpose": "Service cards on hover, paired with an 8px upward translate." },
+      { "name": "tilted-object", "value": "0 34px 60px -30px rgba(0,0,0,0.85)", "purpose": "Contact shadow beneath the 3D-rotated project mockups at rest." },
+      { "name": "tilted-object-hover", "value": "0 42px 70px -30px rgba(0,0,0,0.9)", "purpose": "Same object as the tilt relaxes toward flat." },
+      { "name": "sticky-chrome", "value": "0 12px 32px -18px rgba(0,0,0,0.8)", "purpose": "Under the condensed header once scrolled, with a 14px backdrop blur." }
+    ],
+    "motion": [
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The system's only easing curve — reveals, hovers, and the nav sheet." },
+      { "name": "reveal-rise", "value": "opacity 0.8s, transform 0.8s, translateY(22px) -> none", "purpose": "The single orchestrated entrance, staggered 70ms per sibling, capped at 6 steps." },
+      { "name": "rule-draw", "value": "transform 0.9s, scaleX(0) -> scaleX(1), transform-origin left", "purpose": "Amber rules draw from the left instead of rising." }
+    ],
+    "breakpoints": [
+      { "name": "lg", "value": "1024px" },
+      { "name": "md", "value": "880px" },
+      { "name": "sm", "value": "620px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "refersTo": "link-arrow",
+      "description": "The system's only link treatment — amber, underlined, with a trailing arrow that stays put as the gap opens.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\">My story <svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M4 12h15M13 6l6 6-6 6\"/></svg></a>",
+      "css": ".ds-link-arrow { display: inline-flex; align-items: center; gap: 0.75rem; padding-bottom: 2px; color: #F9B233; font: 600 0.9375rem/1.9 Poppins, sans-serif; text-decoration: none; border-bottom: 1px solid currentColor; transition: gap 0.35s cubic-bezier(.16,1,.3,1), color 0.2s linear; } .ds-link-arrow svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; } .ds-link-arrow:hover, .ds-link-arrow:focus-visible { gap: 1.25rem; color: #F2F3F5; }"
+    },
+    {
+      "name": "Service Card (lead)",
+      "kind": "card",
+      "refersTo": "card-service-lead",
+      "description": "The one amber-filled card in a group. Icon pinned top, title pinned bottom.",
+      "html": "<div class=\"ds-card-lead\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M8 17 3 12l5-5M16 7l5 5-5 5M14 4l-4 16\"/></svg><h3>Senior Frontend<br>Engineer<span>.</span></h3><p>React &middot; Next.js &middot; TypeScript</p></div>",
+      "css": ".ds-card-lead { display: flex; flex-direction: column; justify-content: flex-end; min-height: 250px; padding: 2rem; background: #F9B233; color: #22252E; font-family: Poppins, sans-serif; transition: transform 0.5s cubic-bezier(.16,1,.3,1), box-shadow 0.5s cubic-bezier(.16,1,.3,1); } .ds-card-lead svg { width: 26px; height: 26px; margin-bottom: auto; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-card-lead h3 { margin: 1.75rem 0 0; font-size: 1.55rem; font-weight: 500; line-height: 1.18; letter-spacing: -0.02em; } .ds-card-lead h3 span { color: #22252E; } .ds-card-lead p { margin: 0.625rem 0 0; color: #6B4E12; font-size: 0.8125rem; font-weight: 500; } .ds-card-lead:hover { transform: translateY(-8px); box-shadow: 0 26px 44px -26px rgba(0,0,0,0.75); }"
+    },
+    {
+      "name": "Service Card (default)",
+      "kind": "card",
+      "refersTo": "card-service",
+      "description": "The unfilled sibling. Tonal step only — no border, no radius.",
+      "html": "<div class=\"ds-card\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"4\" width=\"18\" height=\"6\" rx=\"1.5\"/><rect x=\"3\" y=\"14\" width=\"18\" height=\"6\" rx=\"1.5\"/></svg><h3>Full Stack<br>Developer<span>.</span></h3><p>Node.js &middot; Express &middot; PostgreSQL</p></div>",
+      "css": ".ds-card { display: flex; flex-direction: column; justify-content: flex-end; min-height: 250px; padding: 2rem; background: #3D414F; color: #F2F3F5; font-family: Poppins, sans-serif; transition: transform 0.5s cubic-bezier(.16,1,.3,1), box-shadow 0.5s cubic-bezier(.16,1,.3,1); } .ds-card svg { width: 26px; height: 26px; margin-bottom: auto; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; } .ds-card h3 { margin: 1.75rem 0 0; font-size: 1.55rem; font-weight: 500; line-height: 1.18; letter-spacing: -0.02em; } .ds-card h3 span { color: #F9B233; } .ds-card p { margin: 0.625rem 0 0; color: #9AA0AD; font-size: 0.8125rem; font-weight: 500; } .ds-card:hover { transform: translateY(-8px); box-shadow: 0 26px 44px -26px rgba(0,0,0,0.75); }"
+    },
+    {
+      "name": "Underline Field",
+      "kind": "input",
+      "refersTo": "input-underline",
+      "description": "No box, no fill. The label stays visible above the input and turns amber with the underline on focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">What's your name?</label><input id=\"ds-name\" type=\"text\"></div>",
+      "css": ".ds-field { padding: 1.5rem 0 1rem; border-bottom: 1px solid rgba(255,255,255,0.09); font-family: Poppins, sans-serif; transition: border-color 0.3s linear; } .ds-field label { display: block; color: #F2F3F5; font-size: 1.0625rem; font-weight: 600; letter-spacing: -0.01em; transition: color 0.3s cubic-bezier(.16,1,.3,1); } .ds-field input { display: block; width: 100%; margin-top: 0.5rem; padding: 0; background: none; border: none; outline: none; color: #F2F3F5; font-size: 0.9375rem; line-height: 1.7; } .ds-field:focus-within { border-color: #F9B233; } .ds-field:focus-within label { color: #F9B233; }"
+    },
+    {
+      "name": "Nav Link",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Plain text peer links. The in-view section is marked by an amber dot that scales in beneath — no pill, no fill.",
+      "html": "<nav class=\"ds-nav\"><a href=\"#\">Services</a><a class=\"is-current\" href=\"#\">Works</a><a href=\"#\">Blog</a><a href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav { display: flex; gap: 2.5rem; font-family: Poppins, sans-serif; } .ds-nav a { position: relative; padding: 0.25rem 0; color: #9AA0AD; font-size: 1rem; font-weight: 500; text-decoration: none; transition: color 0.2s linear; } .ds-nav a::after { content: \"\"; position: absolute; left: 50%; bottom: -6px; width: 5px; height: 5px; border-radius: 50%; background: #F9B233; transform: translate(-50%, 4px) scale(0); transition: transform 0.35s cubic-bezier(.16,1,.3,1); } .ds-nav a:hover, .ds-nav a.is-current { color: #F2F3F5; } .ds-nav a.is-current::after { transform: translate(-50%, 0) scale(1); }"
+    },
+    {
+      "name": "Statistic",
+      "kind": "custom",
+      "refersTo": "figure",
+      "description": "Amber numeral baseline-aligned against a two-line label. Used only for values traceable to a real record.",
+      "html": "<div class=\"ds-figure\"><span class=\"ds-num\">6+</span><span class=\"ds-label\">Years of<br>Experience.</span></div>",
+      "css": ".ds-figure { display: flex; align-items: baseline; gap: 0.875rem; font-family: Poppins, sans-serif; } .ds-num { color: #F9B233; font-size: 3.25rem; font-weight: 700; line-height: 1; letter-spacing: -0.04em; } .ds-label { color: #F2F3F5; font-size: 0.8125rem; font-weight: 600; line-height: 1.35; }"
+    },
+    {
+      "name": "Client Wordmark",
+      "kind": "chip",
+      "refersTo": "wordmark",
+      "description": "Text stand-in for a client logo, cased to match each brand's own mark. Brightens to full ink on hover.",
+      "html": "<ul class=\"ds-marks\"><li class=\"caps\">Impress Telefilm</li><li class=\"lower\">grameenphone</li><li class=\"caps\">BRAC Bank</li></ul>",
+      "css": ".ds-marks { display: flex; flex-wrap: wrap; align-items: center; gap: 3.75rem; margin: 0; padding: 0; list-style: none; font-family: Poppins, sans-serif; } .ds-marks li { color: #6E7481; font-size: 1.25rem; line-height: 1.2; white-space: nowrap; transition: color 0.25s linear; } .ds-marks li:hover { color: #F2F3F5; } .ds-marks .caps { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; } .ds-marks .lower { font-weight: 600; text-transform: lowercase; letter-spacing: -0.03em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Late Shift",
+    "overview": "This is the palette of a screen in a dark room — the working light of someone who ships video platforms at night. The page never goes bright. It moves between two closely-related navy-charcoals and lets a single amber do every job that colour is allowed to do: draw a rule, mark a link, set a numeral, fill exactly one card. The restraint is the point; when nine sections share one accent, the accent still means something by the ninth.\n\nDensity is editorial rather than app-like. Content sits in an asymmetric two-column split with a narrow left rail carrying the heading and a wider right field carrying the substance, and the page paces itself by alternating two band colours instead of drawing dividers. There are no borders between sections, no boxes around text, and no card wrapping anything that isn't genuinely a discrete object.\n\nThe type is one geometric sans at four weights, set tight and large at the top of the page and quiet everywhere else. Its one mannerism is a terminal period on headings, rendered in amber — a full stop that reads as a signature.",
+    "keyCharacteristics": [
+      "Two-band navy ground; no third background colour",
+      "One accent, used sparingly enough to stay loud",
+      "Asymmetric split grid, never a symmetric three-up",
+      "Headings terminate in an amber period",
+      "Tonal layering for depth; shadows only under objects that are physically lifted"
+    ],
+    "rules": [
+      { "name": "The One Card Rule", "body": "In any group of cards, at most one is filled with Signal Amber. It marks the primary offer, not the first position.", "section": "colors" },
+      { "name": "The Two Band Rule", "body": "Sections are separated by alternating #22252E and #2E313C grounds. Never by a border, a divider, or a third colour.", "section": "colors" },
+      { "name": "The Cool Neutral Rule", "body": "Secondary text is tinted from the ground's own blue axis, never desaturated to grey. #9AA0AD over #2E313C, not #888888.", "section": "colors" },
+      { "name": "The Full Stop Rule", "body": "Display and headline text terminates in a period wrapped in .dot, rendered in Signal Amber. On an amber-filled card the period inverts to #22252E so it stays visible.", "section": "typography" },
+      { "name": "The Designed Break Rule", "body": "Multi-line headings carry an explicit <br> at the intended break. Never let a two-line heading rewrap arbitrarily across breakpoints.", "section": "typography" },
+      { "name": "The One Family Rule", "body": "Hierarchy comes from weight, size, and tracking. Adding a second typeface is not an available move.", "section": "typography" },
+      { "name": "The Asymmetric Split Rule", "body": "Two-column sections are 0.85fr / 1.15fr, never 50/50. The heading rail is always the narrower side.", "section": "layout" },
+      { "name": "The Stagger Is Desktop Rule", "body": "The portfolio's column offset exists above 620px only. Stacked, it reads as a broken grid rather than a designed one.", "section": "layout" },
+      { "name": "The Flat At Rest Rule", "body": "Surfaces carry no shadow until they lift, tilt, or stick. A shadow on a static panel is decoration, and this system does not use it.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do separate sections by alternating #22252E and #2E313C. The band change is the divider.",
+      "Do terminate headings with the amber .dot period, and invert it to #22252E on amber-filled surfaces.",
+      "Do keep the accent to one card, one rule, links, and numerals. If a second element wants amber, one of them is wrong.",
+      "Do tint secondary text from the ground's blue axis (#9AA0AD, #6E7481), never neutral grey.",
+      "Do put explicit <br> breaks in two-line headings.",
+      "Do animate transform, opacity, and translate. Condense the header by sliding it, not by transitioning its padding.",
+      "Do verify any new text colour at 4.5:1 against both band colours, not just the lighter one."
+    ],
+    "donts": [
+      "Don't introduce a third background colour or a border between sections.",
+      "Don't round card corners. The square corner is what keeps the amber card reading as a field.",
+      "Don't add a filled pill or button to the navigation — links are peers here, and a stock pill is foreign to this vocabulary.",
+      "Don't put a shadow on a surface that isn't lifted, tilted, or stuck.",
+      "Don't add a second typeface. Hierarchy is weight, size, and tracking.",
+      "Don't carry the em-dash eyebrow label onto new surfaces. It is inherited from the pinned reference comp on this page; it is not a house pattern.",
+      "Don't let the portfolio stagger survive below 620px."
+    ]
+  }
+}

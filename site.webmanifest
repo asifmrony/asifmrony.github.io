@@ -1,0 +1,24 @@
+{
+  "name": "Asif Mahmud Rony — Senior Frontend Engineer & Full Stack Developer",
+  "short_name": "AMR.",
+  "description": "Senior Frontend Engineer and Full Stack Developer based in Dhaka. OTT/VOD streaming platforms, payment gateways, and Samsung Tizen TV apps.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#2E313C",
+  "theme_color": "#2E313C",
+  "icons": [
+    {
+      "src": "/resources/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/resources/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

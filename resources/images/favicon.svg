@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Asif Mahmud Rony">
+  <title>Asif Mahmud Rony</title>
+  <!-- Full-bleed disc: at 16px every pixel of the canvas has to work, so the
+       site mark's 1.5px inset is dropped here. -->
+  <circle cx="32" cy="32" r="32" fill="#F9B233"/>
+  <!-- Play triangle, optically centred (a right-pointing triangle centred by its
+       bounding box reads as sitting too far left). Slightly bolder than the site
+       mark so it survives a 16px tab. -->
+  <path d="M25.5 17.2 48 32 25.5 46.8Z" fill="#22252E"/>
+</svg>

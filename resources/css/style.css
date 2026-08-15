@@ -687,42 +687,42 @@ textarea {
   text-transform: uppercase;
 }
 
+/* An even grid rather than a flex row: nine logos of nine different widths only
+   look deliberate when each gets an identical cell. */
 .clients__list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: clamp(2rem, 4vw, 3.25rem) clamp(1rem, 2.5vw, 2rem);
   align-items: center;
-  gap: clamp(1.75rem, 4.5vw, 3.75rem);
 }
 
-/* Text stand-ins for client logos. Casing follows each brand's own wordmark;
-   swap for real logo files later — the flex row takes images unchanged. */
-.wordmark {
-  color: var(--fg-faint);
-  font-size: clamp(1rem, 1.6vw, 1.25rem);
-  line-height: 1.2;
-  white-space: nowrap;
-  transition: color 0.25s linear;
+/* Fixed-height cell so wordmarks of different proportions share one baseline. */
+.client {
+  display: grid;
+  place-items: center;
+  height: 60px;
 }
 
-.wordmark:hover {
-  color: var(--fg);
+.client img {
+  /* --h is set per logo in the markup: wide wordmarks run shorter than compact
+     marks so the row reads as evenly weighted rather than evenly tall. */
+  height: var(--h, 36px);
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  /* Knockout: every logo collapses to one white silhouette. Nine brand palettes
+     would otherwise compete with the single amber accent, and several of these
+     marks are black-on-transparent and invisible on the band as supplied. */
+  filter: brightness(0) invert(1);
+  opacity: 0.62;
+  transition:
+    opacity 0.3s linear,
+    transform 0.4s var(--ease-out);
 }
 
-.wordmark--caps {
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-}
-
-.wordmark--lower {
-  font-weight: 600;
-  text-transform: lowercase;
-  letter-spacing: -0.03em;
-}
-
-.wordmark--title {
-  font-weight: 500;
-  letter-spacing: 0.01em;
+.client:hover img {
+  opacity: 1;
+  transform: translateY(-3px);
 }
 
 /* ==========================================================================
@@ -1291,6 +1291,10 @@ textarea {
     --gap-col: 2.5rem;
   }
 
+  .clients__list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   /* Nav collapses to a sheet */
   .site-nav__toggle {
     display: grid;
@@ -1441,11 +1445,17 @@ textarea {
     grid-column: 1 / -1;
   }
 
+  /* two columns at phone width, scaled proportionally rather than per logo */
   .clients__list {
-    gap: 1.5rem 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1.25rem;
   }
 
-  .wordmark {
-    font-size: 0.9375rem;
+  .client {
+    height: 46px;
+  }
+
+  .client img {
+    height: calc(var(--h, 36px) * 0.78);
   }
 }

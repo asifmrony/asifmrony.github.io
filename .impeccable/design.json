@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-13T00:00:00.000Z",
+  "generatedAt": "2026-08-15T07:50:52.812Z",
   "title": "Design System: Asif Mahmud Rony Portfolio",
   "extensions": {
     "colorMeta": {
@@ -8,79 +8,212 @@
         "role": "primary",
         "displayName": "Signal Amber",
         "canonical": "#F9B233",
-        "tonalRamp": ["#2A1C05", "#4A320A", "#6B4810", "#8F6215", "#C1841D", "#F9B233", "#FBC768", "#FDE3B4"]
+        "tonalRamp": [
+          "#2A1C05",
+          "#4A320A",
+          "#6B4810",
+          "#8F6215",
+          "#C1841D",
+          "#F9B233",
+          "#FBC768",
+          "#FDE3B4"
+        ]
       },
       "ink-900": {
         "role": "neutral",
         "displayName": "Deep Band",
         "canonical": "#22252E",
-        "tonalRamp": ["#0D0E12", "#15171D", "#1C1E26", "#22252E", "#2E313C", "#3D414F", "#5A5F70", "#8A8F9E"]
+        "tonalRamp": [
+          "#0D0E12",
+          "#15171D",
+          "#1C1E26",
+          "#22252E",
+          "#2E313C",
+          "#3D414F",
+          "#5A5F70",
+          "#8A8F9E"
+        ]
       },
       "ink-800": {
         "role": "neutral",
         "displayName": "Mid Band",
         "canonical": "#2E313C",
-        "tonalRamp": ["#101117", "#181A21", "#22252E", "#2E313C", "#3D414F", "#565B6C", "#7C8292", "#AFB4C0"]
+        "tonalRamp": [
+          "#101117",
+          "#181A21",
+          "#22252E",
+          "#2E313C",
+          "#3D414F",
+          "#565B6C",
+          "#7C8292",
+          "#AFB4C0"
+        ]
       },
       "ink-750": {
         "role": "neutral",
         "displayName": "Raised Panel",
         "canonical": "#343845",
-        "tonalRamp": ["#121319", "#1B1D25", "#252832", "#343845", "#454A5A", "#5F6577", "#868C9C", "#B6BAC5"]
+        "tonalRamp": [
+          "#121319",
+          "#1B1D25",
+          "#252832",
+          "#343845",
+          "#454A5A",
+          "#5F6577",
+          "#868C9C",
+          "#B6BAC5"
+        ]
       },
       "ink-700": {
         "role": "neutral",
         "displayName": "Raised Panel High",
         "canonical": "#3D414F",
-        "tonalRamp": ["#15161C", "#1F2128", "#2B2E38", "#3D414F", "#4E5364", "#6B7183", "#939AAA", "#C0C4CD"]
+        "tonalRamp": [
+          "#15161C",
+          "#1F2128",
+          "#2B2E38",
+          "#3D414F",
+          "#4E5364",
+          "#6B7183",
+          "#939AAA",
+          "#C0C4CD"
+        ]
       },
       "fg": {
         "role": "neutral",
         "displayName": "Full Ink",
         "canonical": "#F2F3F5",
-        "tonalRamp": ["#2E313C", "#4A4E5A", "#6E7481", "#9AA0AD", "#C2C6CE", "#E0E2E7", "#F2F3F5", "#FBFBFC"]
+        "tonalRamp": [
+          "#2E313C",
+          "#4A4E5A",
+          "#6E7481",
+          "#9AA0AD",
+          "#C2C6CE",
+          "#E0E2E7",
+          "#F2F3F5",
+          "#FBFBFC"
+        ]
       },
       "fg-muted": {
         "role": "neutral",
         "displayName": "Muted Ink",
         "canonical": "#9AA0AD",
-        "tonalRamp": ["#22252E", "#363A46", "#4C515F", "#666C7A", "#828896", "#9AA0AD", "#BCC1CA", "#DEE0E5"]
+        "tonalRamp": [
+          "#22252E",
+          "#363A46",
+          "#4C515F",
+          "#666C7A",
+          "#828896",
+          "#9AA0AD",
+          "#BCC1CA",
+          "#DEE0E5"
+        ]
       },
       "fg-faint": {
         "role": "neutral",
         "displayName": "Faint Ink",
         "canonical": "#6E7481",
-        "tonalRamp": ["#1A1C22", "#282B34", "#383C47", "#4A4F5C", "#5C6270", "#6E7481", "#98 9DA9", "#C4C8D0"]
+        "tonalRamp": [
+          "#1A1C22",
+          "#282B34",
+          "#383C47",
+          "#4A4F5C",
+          "#5C6270",
+          "#6E7481",
+          "#98 9DA9",
+          "#C4C8D0"
+        ]
       },
       "error": {
         "role": "tertiary",
         "displayName": "Recovery Coral",
         "canonical": "#FFAE9B",
-        "tonalRamp": ["#3A1A12", "#5C271B", "#7F3626", "#A54934", "#CB6449", "#E88870", "#FFAE9B", "#FFD3C7"]
+        "tonalRamp": [
+          "#3A1A12",
+          "#5C271B",
+          "#7F3626",
+          "#A54934",
+          "#CB6449",
+          "#E88870",
+          "#FFAE9B",
+          "#FFD3C7"
+        ]
       }
     },
     "typographyMeta": {
-      "display": { "displayName": "Display", "purpose": "The name in the hero. Once per page, nowhere else." },
-      "headline": { "displayName": "Headline", "purpose": "Section headings, broken over two lines with an explicit <br>." },
-      "title": { "displayName": "Title", "purpose": "Hero introduction, pull quote, testimonial quotes — a sentence meant to be read." },
-      "body": { "displayName": "Body", "purpose": "Paragraph copy. 46ch in split layouts, 58ch stacked." },
-      "label": { "displayName": "Label", "purpose": "Eyebrow labels and the client-strip lead-in. Uppercase, 0.22em tracking." }
+      "display": {
+        "displayName": "Display",
+        "purpose": "The name in the hero. Once per page, nowhere else."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, broken over two lines with an explicit <br>."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Hero introduction, pull quote, testimonial quotes — a sentence meant to be read."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraph copy. 46ch in split layouts, 58ch stacked."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Eyebrow labels and the client-strip lead-in. Uppercase, 0.22em tracking."
+      }
     },
     "shadows": [
-      { "name": "lifted-card", "value": "0 26px 44px -26px rgba(0,0,0,0.75)", "purpose": "Service cards on hover, paired with an 8px upward translate." },
-      { "name": "tilted-object", "value": "0 34px 60px -30px rgba(0,0,0,0.85)", "purpose": "Contact shadow beneath the 3D-rotated project mockups at rest." },
-      { "name": "tilted-object-hover", "value": "0 42px 70px -30px rgba(0,0,0,0.9)", "purpose": "Same object as the tilt relaxes toward flat." },
-      { "name": "sticky-chrome", "value": "0 12px 32px -18px rgba(0,0,0,0.8)", "purpose": "Under the condensed header once scrolled, with a 14px backdrop blur." }
+      {
+        "name": "lifted-card",
+        "value": "0 26px 44px -26px rgba(0,0,0,0.75)",
+        "purpose": "Service cards on hover, paired with an 8px upward translate."
+      },
+      {
+        "name": "tilted-object",
+        "value": "0 34px 60px -30px rgba(0,0,0,0.85)",
+        "purpose": "Contact shadow beneath the 3D-rotated project mockups at rest."
+      },
+      {
+        "name": "tilted-object-hover",
+        "value": "0 42px 70px -30px rgba(0,0,0,0.9)",
+        "purpose": "Same object as the tilt relaxes toward flat."
+      },
+      {
+        "name": "sticky-chrome",
+        "value": "0 12px 32px -18px rgba(0,0,0,0.8)",
+        "purpose": "Under the condensed header once scrolled, with a 14px backdrop blur."
+      }
     ],
     "motion": [
-      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "The system's only easing curve — reveals, hovers, and the nav sheet." },
-      { "name": "reveal-rise", "value": "opacity 0.8s, transform 0.8s, translateY(22px) -> none", "purpose": "The single orchestrated entrance, staggered 70ms per sibling, capped at 6 steps." },
-      { "name": "rule-draw", "value": "transform 0.9s, scaleX(0) -> scaleX(1), transform-origin left", "purpose": "Amber rules draw from the left instead of rising." }
+      {
+        "name": "ease-out-expo",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The system's only easing curve — reveals, hovers, and the nav sheet."
+      },
+      {
+        "name": "reveal-rise",
+        "value": "opacity 0.8s, transform 0.8s, translateY(22px) -> none",
+        "purpose": "The single orchestrated entrance, staggered 70ms per sibling, capped at 6 steps."
+      },
+      {
+        "name": "rule-draw",
+        "value": "transform 0.9s, scaleX(0) -> scaleX(1), transform-origin left",
+        "purpose": "Amber rules draw from the left instead of rising."
+      }
     ],
     "breakpoints": [
-      { "name": "lg", "value": "1024px" },
-      { "name": "md", "value": "880px" },
-      { "name": "sm", "value": "620px" }
+      {
+        "name": "lg",
+        "value": "1024px"
+      },
+      {
+        "name": "md",
+        "value": "880px"
+      },
+      {
+        "name": "sm",
+        "value": "620px"
+      }
     ]
   },
   "components": [
@@ -133,12 +266,12 @@
       "css": ".ds-figure { display: flex; align-items: baseline; gap: 0.875rem; font-family: Poppins, sans-serif; } .ds-num { color: #F9B233; font-size: 3.25rem; font-weight: 700; line-height: 1; letter-spacing: -0.04em; } .ds-label { color: #F2F3F5; font-size: 0.8125rem; font-weight: 600; line-height: 1.35; }"
     },
     {
-      "name": "Client Wordmark",
-      "kind": "chip",
-      "refersTo": "wordmark",
-      "description": "Text stand-in for a client logo, cased to match each brand's own mark. Brightens to full ink on hover.",
-      "html": "<ul class=\"ds-marks\"><li class=\"caps\">Impress Telefilm</li><li class=\"lower\">grameenphone</li><li class=\"caps\">BRAC Bank</li></ul>",
-      "css": ".ds-marks { display: flex; flex-wrap: wrap; align-items: center; gap: 3.75rem; margin: 0; padding: 0; list-style: none; font-family: Poppins, sans-serif; } .ds-marks li { color: #6E7481; font-size: 1.25rem; line-height: 1.2; white-space: nowrap; transition: color 0.25s linear; } .ds-marks li:hover { color: #F2F3F5; } .ds-marks .caps { font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; } .ds-marks .lower { font-weight: 600; text-transform: lowercase; letter-spacing: -0.03em; }"
+      "name": "Client Logo Cell",
+      "kind": "custom",
+      "refersTo": "client-logo",
+      "description": "Third-party logo knocked out to a single white silhouette so nine brand palettes cannot compete with the one accent. --h sets optical height per logo.",
+      "html": "<ul class=\"ds-clients\"><li class=\"ds-client\" style=\"--h:44px\"><img src=\"impress-group.webp\" alt=\"Impress Group\"></li><li class=\"ds-client\" style=\"--h:30px\"><img src=\"banglalink.webp\" alt=\"Banglalink\"></li></ul>",
+      "css": ".ds-clients { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:3.25rem 2rem; align-items:center; margin:0; padding:0; list-style:none; } .ds-client { display:grid; place-items:center; height:60px; } .ds-client img { height:var(--h,36px); width:auto; max-width:100%; object-fit:contain; filter:brightness(0) invert(1); opacity:.62; transition:opacity .3s linear, transform .4s cubic-bezier(.16,1,.3,1); } .ds-client:hover img { opacity:1; transform:translateY(-3px); }"
     }
   ],
   "narrative": {
@@ -152,15 +285,56 @@
       "Tonal layering for depth; shadows only under objects that are physically lifted"
     ],
     "rules": [
-      { "name": "The One Card Rule", "body": "In any group of cards, at most one is filled with Signal Amber. It marks the primary offer, not the first position.", "section": "colors" },
-      { "name": "The Two Band Rule", "body": "Sections are separated by alternating #22252E and #2E313C grounds. Never by a border, a divider, or a third colour.", "section": "colors" },
-      { "name": "The Cool Neutral Rule", "body": "Secondary text is tinted from the ground's own blue axis, never desaturated to grey. #9AA0AD over #2E313C, not #888888.", "section": "colors" },
-      { "name": "The Full Stop Rule", "body": "Display and headline text terminates in a period wrapped in .dot, rendered in Signal Amber. On an amber-filled card the period inverts to #22252E so it stays visible.", "section": "typography" },
-      { "name": "The Designed Break Rule", "body": "Multi-line headings carry an explicit <br> at the intended break. Never let a two-line heading rewrap arbitrarily across breakpoints.", "section": "typography" },
-      { "name": "The One Family Rule", "body": "Hierarchy comes from weight, size, and tracking. Adding a second typeface is not an available move.", "section": "typography" },
-      { "name": "The Asymmetric Split Rule", "body": "Two-column sections are 0.85fr / 1.15fr, never 50/50. The heading rail is always the narrower side.", "section": "layout" },
-      { "name": "The Stagger Is Desktop Rule", "body": "The portfolio's column offset exists above 620px only. Stacked, it reads as a broken grid rather than a designed one.", "section": "layout" },
-      { "name": "The Flat At Rest Rule", "body": "Surfaces carry no shadow until they lift, tilt, or stick. A shadow on a static panel is decoration, and this system does not use it.", "section": "elevation" }
+      {
+        "name": "The One Card Rule",
+        "body": "In any group of cards, at most one is filled with Signal Amber. It marks the primary offer, not the first position.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Band Rule",
+        "body": "Sections are separated by alternating #22252E and #2E313C grounds. Never by a border, a divider, or a third colour.",
+        "section": "colors"
+      },
+      {
+        "name": "The Cool Neutral Rule",
+        "body": "Secondary text is tinted from the ground's own blue axis, never desaturated to grey. #9AA0AD over #2E313C, not #888888.",
+        "section": "colors"
+      },
+      {
+        "name": "The Full Stop Rule",
+        "body": "Display and headline text terminates in a period wrapped in .dot, rendered in Signal Amber. On an amber-filled card the period inverts to #22252E so it stays visible.",
+        "section": "typography"
+      },
+      {
+        "name": "The Designed Break Rule",
+        "body": "Multi-line headings carry an explicit <br> at the intended break. Never let a two-line heading rewrap arbitrarily across breakpoints.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Family Rule",
+        "body": "Hierarchy comes from weight, size, and tracking. Adding a second typeface is not an available move.",
+        "section": "typography"
+      },
+      {
+        "name": "The Asymmetric Split Rule",
+        "body": "Two-column sections are 0.85fr / 1.15fr, never 50/50. The heading rail is always the narrower side.",
+        "section": "layout"
+      },
+      {
+        "name": "The Stagger Is Desktop Rule",
+        "body": "The portfolio's column offset exists above 620px only. Stacked, it reads as a broken grid rather than a designed one.",
+        "section": "layout"
+      },
+      {
+        "name": "The Flat At Rest Rule",
+        "body": "Surfaces carry no shadow until they lift, tilt, or stick. A shadow on a static panel is decoration, and this system does not use it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Knockout Rule",
+        "body": "Third-party logos never ship in their own colours. One white silhouette at 62% opacity makes them a set, and makes any future logo safe to drop in.",
+        "section": "components"
+      }
     ],
     "dos": [
       "Do separate sections by alternating #22252E and #2E313C. The band change is the divider.",
@@ -169,7 +343,8 @@
       "Do tint secondary text from the ground's blue axis (#9AA0AD, #6E7481), never neutral grey.",
       "Do put explicit <br> breaks in two-line headings.",
       "Do animate transform, opacity, and translate. Condense the header by sliding it, not by transitioning its padding.",
-      "Do verify any new text colour at 4.5:1 against both band colours, not just the lighter one."
+      "Do verify any new text colour at 4.5:1 against both band colours, not just the lighter one.",
+      "Do knock third-party logos out to white and size them by optical weight, not by uniform height."
     ],
     "donts": [
       "Don't introduce a third background colour or a border between sections.",

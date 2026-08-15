@@ -110,7 +110,7 @@ A near-monochrome navy-charcoal field with a single warm accent; every other val
 - **Raised Panel High** (`#3D414F`): service-card surfaces sitting on the deep band, and placeholder wells.
 - **Full Ink** (`#F2F3F5`): headings and primary text. Never pure white.
 - **Muted Ink** (`#9AA0AD`): body copy and secondary labels. Verified at 4.9:1 on the mid band.
-- **Faint Ink** (`#6E7481`): eyebrow labels, client wordmarks at rest, legal text.
+- **Faint Ink** (`#6E7481`): eyebrow labels and legal text.
 - **Hairline** (`rgba(255,255,255,0.09)`): the only rule colour — list separators and input underlines.
 - **Recovery Coral** (`#FFAE9B`): form error text and invalid field underlines. The one colour permitted outside the amber/neutral system, because an error must not read as an accent.
 
@@ -199,6 +199,11 @@ Four plain text links at 1rem/500 in Muted Ink, brightening to Full Ink on hover
 ### Inputs / Fields
 Underline-only: no box, no fill, no radius. The label sits above at 1.0625rem/600 and stays visible — it is a label, not a placeholder. The hairline underline turns amber on `:focus-within` and the label turns amber with it. Errors turn the underline and message Recovery Coral, and messages name both the problem and the recovery ("Please add an email address so I can reply"). The textarea auto-grows from a single line.
 
+### Client logo grid
+Nine third-party logos, each in an identical 60px cell on a five-column grid (three at ≤880px, two at ≤620px). Every logo is knocked out to a single white silhouette with `filter: brightness(0) invert(1)` at 62% opacity, rising to 100% with a 3px lift on hover. The per-logo `--h` custom property sets optical height rather than a uniform one: wide wordmarks run 30–36px, compact marks 44–52px, so the row reads as evenly *weighted* instead of evenly tall.
+
+**The Knockout Rule.** Third-party logos never ship in their own colours. Nine brand palettes would overrun the single-accent system, and supplied marks are unpredictable — several arrive black-on-transparent and vanish on the band. One white silhouette makes them a set, and makes any future logo safe to drop in.
+
 ### Signature Component: the tilted mockup
 Project screenshots sit in a 16/10 box with 1500px perspective, rotated `rotateX(7deg) rotateY(-15deg) rotateZ(3deg)` and scaled 1.08 past the card's edge so they read as bleeding out of frame. On reveal they settle into that angle from a steeper one; on hover they relax toward flat. This is the page's one authored motion moment and the element that carries its ambition.
 
@@ -215,6 +220,7 @@ One orchestrated reveal: elements rise 22px and fade in on `cubic-bezier(.16, 1,
 - **Do** put explicit `<br>` breaks in two-line headings.
 - **Do** animate transform, opacity, and translate. Condense the header by sliding it, not by transitioning its padding.
 - **Do** verify any new text colour at 4.5:1 against both band colours, not just the lighter one.
+- **Do** knock third-party logos out to white and size them by optical weight, not by uniform height.
 
 ### Don't:
 - **Don't** introduce a third background colour or a border between sections.

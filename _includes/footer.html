@@ -1,0 +1,45 @@
+<footer class="site-footer band band--mid">
+  <div class="shell site-footer__inner">
+    <a
+      class="brand brand--stacked"
+      href="{{ '/' | relative_url }}"
+      aria-label="Back to top"
+    >
+      <svg
+        class="brand__mark"
+        viewBox="0 0 40 40"
+        width="48"
+        height="48"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M20 1.5c10.22 0 18.5 8.28 18.5 18.5S30.22 38.5 20 38.5 1.5 30.22 1.5 20 9.78 1.5 20 1.5Z"
+          fill="var(--accent)"
+        />
+        <path d="M16.5 13.6v12.8L27.4 20 16.5 13.6Z" fill="var(--ink-900)" />
+      </svg>
+    </a>
+    <p class="site-footer__sign">
+      <strong>Thanks for scrolling,</strong> that's all folks.
+    </p>
+    <ul class="social" aria-label="Profiles">
+      <li>
+        <a href="https://www.linkedin.com/in/asifmrony" aria-label="LinkedIn"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://github.com/asifmrony" aria-label="GitHub"
+          ><i class="fab fa-github"></i
+        ></a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/rony.tj/" aria-label="Facebook"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </li>
+    </ul>
+    <p class="site-footer__legal">&copy; {{ site.time | date: "%Y" }} Asif Mahmud Rony</p>
+  </div>
+</footer>

@@ -1,0 +1,65 @@
+---
+layout: default
+body_class: blog-page
+---
+
+<section class="band band--mid page-head">
+  <div class="shell">
+    <p class="eyebrow">Journal</p>
+    <h1 class="page-title">
+      {{ page.heading | default: "Notes on the craft" }}<span class="dot"
+        >.</span
+      >
+    </h1>
+    {% if page.intro %}
+    <p class="prose page-head__intro">{{ page.intro }}</p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="band band--deep archive">
+  <div class="shell">
+    {% if site.posts.size > 0 %}
+    <ul class="archive__list">
+      {% for post in site.posts %}
+      <li class="entry">
+        <a href="{{ post.url | relative_url }}">
+          <span class="entry__meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%-d %b %Y" }}
+            </time>
+            {% if post.category %}<span class="entry__cat"
+              >{{ post.category }}</span
+            >{% endif %}
+          </span>
+
+          <span class="entry__body">
+            <span class="entry__title">{{ post.title }}</span>
+            <span class="entry__excerpt">
+              {%- if post.description -%} {{ post.description }} {%- else -%} {{
+              post.excerpt | strip_html | normalize_whitespace | truncate: 160
+              }} {%- endif -%}
+            </span>
+          </span>
+
+          <svg
+            class="i-arrow"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <path d="M4 12h15M13 6l6 6-6 6" />
+          </svg>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p class="archive__empty">
+      Nothing published yet. The first note is being written — check back
+      shortly, or
+      <a href="{{ '/feed.xml' | relative_url }}">subscribe to the feed</a>.
+    </p>
+    {% endif %}
+  </div>
+</section>

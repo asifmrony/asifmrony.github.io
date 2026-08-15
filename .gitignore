@@ -1,2 +1,8 @@
 # Full-size source images kept locally; not deployed.
 .originals/
+
+# Jekyll build output and caches
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/

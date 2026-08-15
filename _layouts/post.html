@@ -1,0 +1,81 @@
+---
+layout: default
+body_class: post-page
+---
+
+<article class="article">
+  <header class="band band--deep article__head">
+    <div class="shell">
+      <a class="article__back" href="{{ '/blog/' | relative_url }}">
+        <svg class="i-arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path d="M20 12H5M11 18l-6-6 6-6" />
+        </svg>
+        All notes
+      </a>
+
+      <p class="eyebrow">
+        <time datetime="{{ page.date | date_to_xmlschema }}">
+          {{ page.date | date: "%-d %B %Y" }}
+        </time>
+        {% if page.category %} &middot; {{ page.category }}{% endif %} &middot;
+        {% assign words = content | strip_html | number_of_words %}
+        {{ words | divided_by: 200 | plus: 1 }} min read
+      </p>
+
+      <h1 class="article__title">{{ page.title }}<span class="dot">.</span></h1>
+
+      {% if page.description %}
+      <p class="article__standfirst">{{ page.description }}</p>
+      {% endif %}
+    </div>
+  </header>
+
+  {% if page.image %}
+  <div class="article__figure">
+    <div class="shell">
+      <img
+        src="{{ page.image | relative_url }}"
+        alt="{{ page.image_alt | default: page.title | escape }}"
+        loading="eager"
+        decoding="async"
+      />
+    </div>
+  </div>
+  {% endif %}
+
+  <div class="band band--mid article__body-band">
+    <div class="shell">
+      <div class="article__body">{{ content }}</div>
+
+      {% if page.tags and page.tags.size > 0 %}
+      <ul class="article__tags" aria-label="Tags">
+        {% for tag in page.tags %}
+        <li>{{ tag }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+  </div>
+
+  {% if page.previous or page.next %}
+  <nav class="band band--deep article__nav" aria-label="More posts">
+    <div class="shell article__nav-grid">
+      {% if page.next %}
+      <a class="article__nav-link article__nav-link--prev" href="{{ page.next.url | relative_url }}">
+        <span class="article__nav-label">Newer</span>
+        <span class="article__nav-title">{{ page.next.title }}</span>
+      </a>
+      {% else %}
+      <span></span>
+      {% endif %}
+
+      {% if page.previous %}
+      <a class="article__nav-link article__nav-link--next" href="{{ page.previous.url | relative_url }}">
+        <span class="article__nav-label">Older</span>
+        <span class="article__nav-title">{{ page.previous.title }}</span>
+      </a>
+      {% endif %}
+    </div>
+  </nav>
+  {% endif %}
+</article>

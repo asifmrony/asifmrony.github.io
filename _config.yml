@@ -1,0 +1,84 @@
+# ============================================================================
+#  Site
+# ============================================================================
+
+title: Asif Mahmud Rony
+tagline: Senior Frontend Engineer & Full Stack Developer
+description: >-
+  Notes on frontend performance, video delivery, and building for screens that
+  aren't a laptop — from a senior engineer shipping OTT/VOD platforms, payment
+  gateways, and Samsung Tizen TV apps out of Dhaka.
+
+url: "https://asifmrony.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Asif Mahmud Rony
+  email: asifmrony@gmail.com
+
+# Used by jekyll-seo-tag for the Person/Organization JSON-LD block.
+social:
+  name: Asif Mahmud Rony
+  links:
+    - https://www.linkedin.com/in/asifmrony
+    - https://github.com/asifmrony
+    - https://www.facebook.com/rony.tj/
+
+logo: /resources/images/icon-512.png
+
+# ============================================================================
+#  Build
+# ============================================================================
+
+permalink: /blog/:year/:month/:day/:title/
+timezone: Asia/Dhaka
+
+# Everything above <!--more--> becomes post.excerpt. Without this Jekyll uses
+# the first paragraph, which is usually a weak summary.
+excerpt_separator: "<!--more-->"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  hard_wrap: false
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+feed:
+  path: /feed.xml
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: Asif Mahmud Rony
+      # tells jekyll-seo-tag to emit BlogPosting JSON-LD rather than WebPage
+      seo:
+        type: BlogPosting
+
+# ============================================================================
+#  Exclude
+# ----------------------------------------------------------------------------
+#  GitHub Pages runs jekyll-optional-front-matter, which turns *any* markdown
+#  file into a published page. Without these lines DESIGN.md and PRODUCT.md are
+#  served at /DESIGN/ and /PRODUCT/ and get indexed.
+# ============================================================================
+
+exclude:
+  - DESIGN.md
+  - PRODUCT.md
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - .impeccable/
+  - .originals/
+  - .claude/
+  - vendor/
+  - node_modules/

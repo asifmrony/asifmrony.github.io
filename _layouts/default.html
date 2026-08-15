@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="{{ page.body_class | default: 'page' }}">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    {% include header.html %}
+
+    <main id="main">{{ content }}</main>
+
+    {% include footer.html %}
+
+    <script src="{{ '/resources/js/jquery-3.4.1.min.js' | relative_url }}"></script>
+    <script src="{{ '/resources/js/main.js' | relative_url }}"></script>
+  </body>
+</html>

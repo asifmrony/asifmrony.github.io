@@ -1,0 +1,51 @@
+<header class="site-header" id="siteHeader">
+  <div class="shell site-header__inner">
+    <a
+      class="brand"
+      href="{{ '/' | relative_url }}"
+      aria-label="Asif Mahmud Rony — home"
+    >
+      <svg
+        class="brand__mark"
+        viewBox="0 0 40 40"
+        width="40"
+        height="40"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M20 1.5c10.22 0 18.5 8.28 18.5 18.5S30.22 38.5 20 38.5 1.5 30.22 1.5 20 9.78 1.5 20 1.5Z"
+          fill="var(--accent)"
+        />
+        <path d="M16.5 13.6v12.8L27.4 20 16.5 13.6Z" fill="var(--ink-900)" />
+      </svg>
+      <span class="brand__word">AMR.</span>
+    </a>
+
+    <nav class="site-nav" aria-label="Primary">
+      <button
+        class="site-nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primaryNav"
+        aria-label="Open menu"
+      >
+        <span class="site-nav__bar"></span>
+        <span class="site-nav__bar"></span>
+      </button>
+      <ul class="site-nav__list" id="primaryNav">
+        <li><a href="{{ '/#services' | relative_url }}">Services</a></li>
+        <li><a href="{{ '/#work' | relative_url }}">Works</a></li>
+        <li>
+          <a
+            href="{{ '/blog/' | relative_url }}"
+            {% if page.url contains '/blog' %}class="is-current"
+            aria-current="page"{% endif %}
+            >Blog</a
+          >
+        </li>
+        <li><a href="{{ '/#contact' | relative_url }}">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>

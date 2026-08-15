@@ -1,0 +1,49 @@
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<meta name="theme-color" content="#2E313C" />
+
+<!-- jekyll-seo-tag emits title, description, canonical, Open Graph, Twitter
+     cards and JSON-LD from front matter + _config.yml. Do not hand-write those
+     tags here or they will be duplicated. -->
+{% seo %}
+
+<link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="32x32" />
+<link
+  rel="icon"
+  href="{{ '/resources/images/favicon.svg' | relative_url }}"
+  type="image/svg+xml"
+/>
+<link
+  rel="icon"
+  href="{{ '/resources/images/icon-96.png' | relative_url }}"
+  type="image/png"
+  sizes="96x96"
+/>
+<link
+  rel="apple-touch-icon"
+  href="{{ '/resources/images/apple-touch-icon.png' | relative_url }}"
+/>
+<link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
+
+{% feed_meta %}
+
+<link
+  rel="preload"
+  href="{{ '/resources/fonts/Poppins/poppins-600.woff2' | relative_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+<link
+  rel="preload"
+  href="{{ '/resources/fonts/Poppins/poppins-400.woff2' | relative_url }}"
+  as="font"
+  type="font/woff2"
+  crossorigin
+/>
+
+<link rel="stylesheet" href="{{ '/resources/css/all.css' | relative_url }}" />
+<link rel="stylesheet" href="{{ '/resources/css/style.css' | relative_url }}" />
+<!-- Blog-only styles. Kept out of style.css so the homepage is untouched. -->
+<link rel="stylesheet" href="{{ '/resources/css/blog.css' | relative_url }}" />

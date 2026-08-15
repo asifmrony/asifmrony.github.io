@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://asifmrony.github.io/sitemap.xml

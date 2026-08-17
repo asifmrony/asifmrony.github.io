@@ -1,3 +1,11 @@
+---
+# This page is a complete document already. "none" is a passthrough layout that
+# emits {{ content }} unchanged — it exists so jekyll-default-layout (always on
+# under GitHub Pages) cannot wrap this file in the site layout.
+layout: none
+permalink: /
+---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -131,7 +139,7 @@
           <ul class="site-nav__list" id="primaryNav">
             <li><a href="#services">Services</a></li>
             <li><a href="#work">Works</a></li>
-            <li><a href="#blog">Blog</a></li>
+            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -636,8 +644,9 @@
       </section>
 
       <!--======================= 6. Blog ===========================-->
-      <!-- PLACEHOLDER CONTENT: these three entries are unwritten drafts, marked "Draft" rather than
-             carrying invented publish dates. Replace title + date + href when posts go live. -->
+      <!-- Latest three posts, pulled from _posts by Jekyll. Publishing a new
+           markdown file updates this section, /blog/, the sitemap and the feed
+           with no edit here. -->
       <section class="blog band band--deep" id="blog">
         <div class="shell blog__grid">
           <div class="blog__intro">
@@ -649,15 +658,35 @@
               Working notes on frontend performance, video delivery, and
               building for screens that aren't a laptop.
             </p>
+            {% if site.posts.size > 0 %}
+            <a class="link-arrow reveal" href="{{ '/blog/' | relative_url }}"
+              >All notes
+              <svg
+                class="i-arrow"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+                focusable="false"
+              >
+                <path d="M4 12h15M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            {% endif %}
           </div>
 
+          {% if site.posts.size > 0 %}
           <ul class="post-list">
+            {% for post in site.posts limit: 3 %}
             <li class="post reveal">
-              <a href="#blog">
-                <span class="post__meta">Draft · Performance</span>
-                <span class="post__title"
-                  >Raising Core Web Vitals from F to A</span
+              <a href="{{ post.url | relative_url }}">
+                <!-- date and category stack rather than sharing a separator:
+                     the column is narrow enough that "·" would dangle at a line
+                     end once either value grows. -->
+                <span class="post__meta"
+                  ><time datetime="{{ post.date | date_to_xmlschema }}"
+                    >{{ post.date | date: "%-d %b %Y" }}</time
+                  >{% if post.category %}<br />{{ post.category }}{% endif %}</span
                 >
+                <span class="post__title">{{ post.title }}</span>
                 <svg
                   class="i-arrow"
                   viewBox="0 0 24 24"
@@ -668,39 +697,13 @@
                 </svg>
               </a>
             </li>
-            <li class="post reveal">
-              <a href="#blog">
-                <span class="post__meta">Draft · Streaming</span>
-                <span class="post__title"
-                  >HLS playback that doesn't stutter</span
-                >
-                <svg
-                  class="i-arrow"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path d="M4 12h15M13 6l6 6-6 6" />
-                </svg>
-              </a>
-            </li>
-            <li class="post reveal">
-              <a href="#blog">
-                <span class="post__meta">Draft · Platforms</span>
-                <span class="post__title"
-                  >Designing for a remote control, not a cursor</span
-                >
-                <svg
-                  class="i-arrow"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                  focusable="false"
-                >
-                  <path d="M4 12h15M13 6l6 6-6 6" />
-                </svg>
-              </a>
-            </li>
+            {% endfor %}
           </ul>
+          {% else %}
+          <p class="prose reveal">
+            The first note is being written. Check back shortly.
+          </p>
+          {% endif %}
         </div>
       </section>
 

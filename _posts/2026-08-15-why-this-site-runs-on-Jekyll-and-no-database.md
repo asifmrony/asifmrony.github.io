@@ -6,7 +6,7 @@ date: 2026-08-15 09:00:00 +0600
 category: Engineering
 tags: [jekyll, static-sites, performance]
 image: /resources/images/og-card.jpg
-image_alt: "Asif Mahmud Rony — Senior Frontend Engineer and Full Stack Developer"
+image_alt: "Asif Mahmud Rony — Software (Web, Mobile, TV) Developer"
 ---
 
 The portfolio you are reading is hand-written HTML, CSS and a little jQuery.
